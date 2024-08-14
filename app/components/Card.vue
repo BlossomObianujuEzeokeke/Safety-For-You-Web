@@ -7,6 +7,7 @@ defineProps<{ post: Post }>()
 
 <template>
   <NuxtLink class="card" :to="`/post/${post.slug.current}`">
+    <h1 class="text-2xl font-extrabold font-text-montserrat text-darkBlue">Testing Montserrat</h1>
     <img
       v-if="post.mainImage"
       class="card__cover"

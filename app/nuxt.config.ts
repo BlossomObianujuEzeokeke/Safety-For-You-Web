@@ -2,19 +2,20 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/sanity',
-    [
-      '@nuxtjs/google-fonts',
-      {
-        families: {
-          'IBM Plex Mono': [500, 700],
-          Inter: [500, 700, 800],
-          'PT Serif': [400, 700],
-          download: true,
-          inject: true,
-        },
-      },
-    ],
+    // [
+    //   '@nuxtjs/google-fonts',
+    //   {
+    //     families: {
+    //       'IBM Plex Mono': [500, 700],
+    //       Inter: [500, 700, 800],
+    //       'PT Serif': [400, 700],
+    //       download: true,
+    //       inject: true,
+    //     },
+    //   },
+    // ],
   ],
+
   sanity: {
     projectId: process.env.NUXT_SANITY_PROJECT_ID,
     dataset: process.env.NUXT_SANITY_DATASET,
@@ -26,10 +27,16 @@ export default defineNuxtConfig({
       stega: true,
     },
   },
+
+  css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       autoprefixer: {},
+      tailwindcss: {},
       'postcss-nested': {},
     },
   },
+
+  compatibilityDate: '2024-08-12',
 })
