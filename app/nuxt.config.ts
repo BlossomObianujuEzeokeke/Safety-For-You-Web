@@ -1,5 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app : {
+    head: {
+      htmlAttrs: {
+        lang: 'en' // Set the language code you want, e.g., 'en' for English
+      },
+      title: "Safety For You Services Ltd",
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1'},
+        {name: 'description', content: 'Everything about Nuxt 3'}
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favico.png' },
+        // You can add more icons for different formats/devices if needed
+      ],
+    },
+  },
   modules: [
     '@nuxtjs/sanity',
     // [
