@@ -80,11 +80,47 @@
             <p class="text-center text-darkGray text-lg font-medium">Key decision-makers at Safety for you LTD</p>
 
             
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <!-- Card 1 -->
-                <div class="image-card w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-2 border-borderGray rounded-2xl relative overflow-hidden hover:border-green-500 transition-all duration-300">
+                <div class="team-card group w-full h-[250px] sm:h-[300px] md:h-[150px] lg:h-[400px] border-[3px] border-borderGray rounded-2xl relative overflow-hidden hover:border-darkGreen transition-all duration-700">
                     <figure class="flex flex-col h-full pt-12">
-                        <img class="object-cover w-full h-[80%] transition-transform duration-300 hover:scale-105" src="../assets/images/alex-obiora-cropped.png" alt="Alex Obiora">
+                        <img class="object-cover w-full h-[80%] transition-transform duration-700 group-hover:scale-110" src="../assets/images/alex-obiora-cropped.png" alt="Alex Obiora">
+                        <figcaption class="flex flex-col items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] space-y-3 py-8">
+                            <h2 class="font-bold text-xl">Alex Obiora</h2>
+                            <div class="flex items-center justify-center w-full px-4">
+                                <p class="font-medium">Managing Consultant</p>
+                                <svg class="hidden md:block transition-colors duration-700 group-hover:stroke-white" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.2">
+                                        <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                 <!-- Card 2 -->
+                 <div class="team-card w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-2 border-borderGray rounded-2xl relative overflow-hidden hover:border-green-500 transition-all duration-300">
+                    <figure class="flex flex-col h-full pt-12">
+                        <img class="object-cover w-full h-[80%] transition-transform duration-300 hover:scale-105" src="../assets/images/irfan-pv-cropped.png" alt="Alex Obiora">
+                        <figcaption class="flex flex-col items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] space-y-3 py-8">
+                            <h2 class="font-bold text-xl">Alex Obiora</h2>
+                            <div class="flex items-center justify-center w-full px-4">
+                                <p class="font-medium">Managing Consultant</p>
+                                <svg class="hidden md:block transition-colors duration-300 hover:stroke-white" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.2">
+                                        <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                 <!-- Card 3 -->
+                 <div class="team-card w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-2 border-borderGray rounded-2xl relative overflow-hidden hover:border-green-500 transition-all duration-300">
+                    <figure class="flex flex-col h-full pt-12">
+                        <img class="object-cover w-full h-[80%] transition-transform duration-300 hover:scale-105" src="../assets/images/kamsy-madueke-cropped.png" alt="Alex Obiora">
                         <figcaption class="flex flex-col items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] space-y-3 py-8">
                             <h2 class="font-bold text-xl">Alex Obiora</h2>
                             <div class="flex items-center justify-center w-full px-4">
@@ -100,45 +136,9 @@
                 </div>
 
                  <!-- Card 1 -->
-                 <div class="image-card w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-2 border-borderGray rounded-2xl relative overflow-hidden hover:border-green-500 transition-all duration-300">
+                 <div class="team-card w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-2 border-borderGray rounded-2xl relative overflow-hidden hover:border-green-500 transition-all duration-300">
                     <figure class="flex flex-col h-full pt-12">
-                        <img class="object-cover w-full h-[80%] transition-transform duration-300 hover:scale-105" src="../assets/images/alex-obiora-cropped.png" alt="Alex Obiora">
-                        <figcaption class="flex flex-col items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] space-y-3 py-8">
-                            <h2 class="font-bold text-xl">Alex Obiora</h2>
-                            <div class="flex items-center justify-center w-full px-4">
-                                <p class="font-medium">Managing Consultant</p>
-                                <svg class="hidden md:block transition-colors duration-300 hover:stroke-white" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.2">
-                                        <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                    </g>
-                                </svg>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-
-                 <!-- Card 1 -->
-                 <div class="image-card w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-2 border-borderGray rounded-2xl relative overflow-hidden hover:border-green-500 transition-all duration-300">
-                    <figure class="flex flex-col h-full pt-12">
-                        <img class="object-cover w-full h-[80%] transition-transform duration-300 hover:scale-105" src="../assets/images/alex-obiora-cropped.png" alt="Alex Obiora">
-                        <figcaption class="flex flex-col items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] space-y-3 py-8">
-                            <h2 class="font-bold text-xl">Alex Obiora</h2>
-                            <div class="flex items-center justify-center w-full px-4">
-                                <p class="font-medium">Managing Consultant</p>
-                                <svg class="hidden md:block transition-colors duration-300 hover:stroke-white" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.2">
-                                        <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                    </g>
-                                </svg>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-
-                 <!-- Card 1 -->
-                 <div class="image-card w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] border-2 border-borderGray rounded-2xl relative overflow-hidden hover:border-green-500 transition-all duration-300">
-                    <figure class="flex flex-col h-full pt-12">
-                        <img class="object-cover w-full h-[80%] transition-transform duration-300 hover:scale-105" src="../assets/images/alex-obiora-cropped.png" alt="Alex Obiora">
+                        <img class="object-cover w-full h-[80%] transition-transform duration-300 hover:scale-105" src="../assets/images/princewill-ekeji-cropped.png" alt="Alex Obiora">
                         <figcaption class="flex flex-col items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] space-y-3 py-8">
                             <h2 class="font-bold text-xl">Alex Obiora</h2>
                             <div class="flex items-center justify-center w-full px-4">
@@ -191,7 +191,7 @@
   white-space: normal;
 }
 
-.image-card {
+.team-card {
     background-image: url('../assets/images/background-spiral.png');
     background-repeat: no-repeat;
     background-position: center;
