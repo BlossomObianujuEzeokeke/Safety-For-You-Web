@@ -1,8 +1,10 @@
 <template>
     <div class="">
 
-        <!------------ Header ------------->
-        <div class="flex items-center justify-between bg-darkGreen text-white px-6 py-3">
+       
+
+        <div class="fixed w-full">
+          <div class="flex items-center justify-between bg-darkGreen text-white px-6 py-3">
             <!-- Logo and Mobile Menu Hamburger -->
             <div class="flex items-center justify-between gap-6">
                 <img class=" h-12" src="../assets/images/S4U.png" alt="Safety For You Logo">
@@ -42,19 +44,21 @@
                     <span>+234(0)8164339861</span>
                 </div>
             </div>
-        </div>
+           </div>
 
-        <!---------- Navigation Menu ------------>
-        <nav class=" hidden md:block bg-semiDarkGreen text-white py-4">
-            <ul class="flex justify-center items-center gap-x-8 font-semibold text-sm">
-                <NuxtLink to="/">Home</NuxtLink>
-                <NuxtLink to="/about-us">About Us</NuxtLink>
-                <NuxtLink to="/contact-us">Contact Us</NuxtLink>
-                <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
-                <NuxtLink to="/trainers-profile">Trainers Profile</NuxtLink>
-                <NuxtLink to="/trainings">Trainings</NuxtLink>
-            </ul>
-        </nav>
+          <!---------- Navigation Menu ------------>
+          <nav class=" hidden md:block bg-semiDarkGreen text-white py-4">
+              <ul class="flex justify-center items-center gap-x-8 font-semibold text-sm">
+                  <NuxtLink to="/">Home</NuxtLink>
+                  <NuxtLink to="/about-us">About Us</NuxtLink>
+                  <NuxtLink to="/contact-us">Contact Us</NuxtLink>
+                  <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+                  <NuxtLink to="/trainers-profile">Trainers Profile</NuxtLink>
+                  <NuxtLink to="/trainings">Trainings</NuxtLink>
+              </ul>
+          </nav>
+        </div>
+     
 
         <!---------- Mobile Menu ------------->
         <div class="block md:hidden">
