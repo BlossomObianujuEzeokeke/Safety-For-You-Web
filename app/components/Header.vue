@@ -1,9 +1,6 @@
 <template>
     <div class="">
-
-       
-
-        <div class="fixed w-full">
+        <div class="fixed z-40 w-full">
           <div class="flex items-center justify-between bg-darkGreen text-white px-6 py-3">
             <!-- Logo and Mobile Menu Hamburger -->
             <div class="flex items-center justify-between gap-6">
@@ -59,7 +56,6 @@
           </nav>
         </div>
      
-
         <!---------- Mobile Menu ------------->
         <div class="block md:hidden">
             <!--- Background overlay ---->
