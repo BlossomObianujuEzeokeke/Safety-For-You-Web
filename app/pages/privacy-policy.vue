@@ -2,7 +2,7 @@
     <section>
         <Header />
 
-        <div class="px-4 md:px-8 lg:px-16 py-8 pb-24 lg:pb-48 bg-lightGrayBg" id="privacy-policy">
+        <div class="pt-16 px-4 md:px-8 lg:px-16 pb-24 lg:pb-48 bg-lightGrayBg" id="privacy-policy">
             <h1 class="uppercase font-extrabold text-3xl md:text-4xl lg:text-6xl text-darkGray/30 text-center py-4 md:py-6 lg:py-8">
                 privacy policy
             </h1>
