@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <div class="fixed z-40 w-full">
+        <div id="header-wrapper" :class="{'border-b-[1.5px]': useScroll}" class="fixed z-40 w-full">
           <div class="flex items-center justify-between bg-darkGreen text-white px-6 py-3">
             <!-- Logo and Mobile Menu Hamburger -->
             <div class="flex items-center justify-between gap-6">
@@ -88,9 +88,29 @@
 
 <script setup lang="ts">
 
-import { onMounted, onBeforeUnmount } from 'vue';
+import { onMounted, onBeforeUnmount, onUnmounted } from 'vue';
 
 const menuState = useState<boolean>('menuState', () => false);
+
+const useScroll = useState<boolean>('useScroll', () => false);
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+// Use this to show / hide border bottom on the header nav
+const handleScroll = () => {
+  if(document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) {
+    useScroll.value = true
+  } 
+  if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    useScroll.value = false
+  }
+}
 
 const toggleMenu = () => {
     menuState.value = !menuState.value

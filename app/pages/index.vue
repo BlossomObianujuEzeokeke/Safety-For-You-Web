@@ -18,7 +18,9 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
     <!-- <Card v-for="post in posts || []" :key="post._id" :post="post" />
     <Welcome v-if="!posts?.length" /> -->
 
-      <!------ Hero ------->
+    <!--------- Body ---------->
+    <div class=" pt-28">
+              <!------ Hero ------->
       <div class="hidden md:flex relative overflow-y-hidden h-[39rem] border-b">
 
         <!-- SVG Div -->
@@ -89,7 +91,6 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       </div>
 
 
-    
       <!----- Logo Slider ----->
       <div class="py-8">
         <h3 class="text-center text-semiDarkGreen font-semibold py-3 ">Trusted By Partners from around the World</h3>
@@ -149,11 +150,8 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 
       <!--------- Carousel Section---------->
 
-      <div class="pt-16 pb-16">
+      <div class="pt-16 pb-16 px-16">
         
-       
-
-
         <div class="relative" id="aid-workers-section">
           <!-- Text overlay -->
           <h3 class="absolute font-bold text-lg text-semiDarkGreen italic top-[25%] left-[32%] z-10">
@@ -180,13 +178,35 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
              
               </div>
           </div>
-      </div>
-        <div>
-          <!--- Box here -->
+        </div>
+        <div class=" flex border border-[#B7F1B9] rounded-2xl bg-white shadow-lg py-8 px-6">
+            <div class=" w-[20%]">
+                <img class=" w-full" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
+            </div>
+            <div class=" w-[80%] flex flex-col items-end justify-between pb-2 pt-4">
+              <p class="font-bold italic text-black">
+                Safety For You Services Ltd recognizes humanitarian personnel and those who have died working for humanitarian causes.
+                 We join the rest of the world on the 19th of August each year to mark the world humanitarian day.
+              </p>
+              
+              <!-- Text slider here -->
+              <div class="text-mainGreen font-bold space-x-16" id="text-slider">
+                <span>Hauwa Liman (ICRC)</span>
+                <span>Saifura Hussaini Ahmed Khorsa (ICRC)</span>
+                <span>Grace Taku (Action Against Hunger)</span>
+                <span>Michael Nnadi (Good Shepherd Major Seminary)</span>
+                <span>Clementina Ukonga (UN)</span>
+                <span>Ladi Bello (Medicines San Frontier)</span>
+                <span>Faye Mooney (Mercy Corps)</span>
+                <span>Ibrahim Abubakar (International Rescue Mission)</span>
+              </div>
+          
+            </div>
         </div>
       </div>
+    </div>
 
-      <Footer />
+    <Footer />
       
   </section>
 </template>
@@ -198,14 +218,12 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
   stroke: var(--Main-Green, #4CAF4F);
 }
 
-/**#safety4uservices {
-  background: url('../assets/images/S4U-services-section-bg.png');
+#safety4uservices {
+  background-image: url('../assets/images/S4U-services-section-bg.png');
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 300px;
-  background-position: 95% 10px;
+  background-size: 400px;
+  background-position: center right;
 }
-**/
 
 #logo-slider {
   position: relative;
@@ -216,6 +234,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
   display: flex;
   animation: yoyo 25s linear infinite;
 }
+
 
 @keyframes yoyo {
   0% {
@@ -229,10 +248,33 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
   }
 }
 
-#right-spiral {
-  fill: var(--Main-Green, #4CAF4F);
+#text-slider {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#text-slider span {
+  display: inline-block;
+  padding-right: 4rem; /* Space between items */
+  animation: slide-linear-double 20s linear infinite;
 }
 
 
+@keyframes slide-linear-double {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+
+}
+
+#right-spiral {
+  fill: var(--Main-Green, #4CAF4F);
+}
 
 </style>

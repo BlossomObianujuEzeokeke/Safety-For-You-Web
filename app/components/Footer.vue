@@ -1,14 +1,20 @@
 <template>
-    <footer class=" bg-semiDarkGreen px-6 pt-10" id="footer">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row items-center justify-evenly gap-x-16">
-                <div class="flex items-center justify-center gap-x-2 border-b md:border-b-0">
-                    <img class=" h-16" src="../assets/images/S4U.png" alt="Safety For You Logo">
-                    <span class=" text-4xl font-bold text-white">SafetyForYou</span>
+    <footer class=" bg-semiDarkGreen pt-5 md:pt-10" id="footer">
+        <div class="">
+            <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-x-16">
+
+                <!------ Logo ------->
+                <div class=" pb-2 border-b-[1.5px] border-mainGreen md:border-none md:pb-0">
+                  <div class="flex items-center justify-center gap-x-2">
+                    <img class=" h-12 md:h-16" src="../assets/images/S4U.png" alt="Safety For You Logo">
+                    <span class=" text-3xl md:text-4xl font-bold text-white">SafetyForYou</span>
+                  </div>
                 </div>
-          
-                <div class="mt-6 lg:mt-0 lg:flex-1">
-                    <div class="grid grid-cols-2 gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-4">
+                
+
+                <!---- Menu Items ---->
+                <div class="sm:flex sm:flex-col sm:items-center sm:justify-items-start mt-6 lg:mt-0 lg:flex-1">
+                    <div class="px-10 grid gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
                         <div class="text-white space-y-5">
                             <h3 class=" uppercase font-bold">navigation</h3>
                             <NuxtLink to="" class="block py- mt-2 text-basefont-medium hover:underline">Home</NuxtLink>
@@ -119,6 +125,13 @@
     background-repeat: no-repeat;
     background-size: 900px;
     background-position: -85% 45%;
+}
+
+@media screen and (max-width: 480px) {
+  #footer {
+    background-size: 800px;
+    background-position: center;
+  }
 }
 
 </style>
