@@ -5,21 +5,21 @@
             <!-- Logo and Mobile Menu Hamburger -->
             <div class="flex items-center justify-between gap-6">
                 <img class=" h-12" src="../assets/images/S4U.png" alt="Safety For You Logo">
-                <div class=" hidden md:block flex-col">
+                <div class=" hidden lg:block flex-col">
                     <p class=" font-semibold capitalize">Safety For You services LTD</p>
                     <span class=" text-xs text-lightGray font-semibold">We specialize in health, safety, medical and security trainings</span>
                 </div>
             </div>
 
             <!-- Hamburger Icon -->
-            <button @click="toggleMenu" :class="{open : menuState}" id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+            <button @click="toggleMenu" :class="{open : menuState}" id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
                 <span class="hamburger-top"></span>
                 <span class="hamburger-middle"></span>
                 <span class="hamburger-bottom"></span>
             </button>
 
             <!-- Contact -->
-            <div class="hidden md:flex gap-x-4 font-semibold text-sm">
+            <div class="hidden lg:flex gap-x-4 font-semibold text-sm">
                 <div class="flex items-center gap-x-2">
                     <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Mail">
@@ -44,43 +44,87 @@
            </div>
 
           <!---------- Navigation Menu ------------>
-          <nav class=" hidden md:block bg-semiDarkGreen text-white py-4">
+          <nav class=" hidden lg:block bg-semiDarkGreen text-white py-4">
               <ul class="flex justify-center items-center gap-x-8 font-semibold text-sm">
-                  <NuxtLink to="/">Home</NuxtLink>
-                  <NuxtLink to="/about-us">About Us</NuxtLink>
-                  <NuxtLink to="/contact-us">Contact Us</NuxtLink>
-                  <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
-                  <NuxtLink to="/trainers-profile">Trainers Profile</NuxtLink>
-                  <NuxtLink to="/trainings">Trainings</NuxtLink>
+                  <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/">Home</NuxtLink>
+                  <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/about-us">About Us</NuxtLink>
+                  <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/contact-us">Contact Us</NuxtLink>
+                  <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/privacy-policy">Privacy Policy</NuxtLink>
+                  <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/trainers-profile">Trainers Profile</NuxtLink>
+                  <div class=" relative flex items-center justify-between gap-x-4">
+                    <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/trainings">Trainings</NuxtLink>
+                    <svg @click="dropDownMenu" class="hover:cursor-pointer hover:text-gray-300" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="bxs:up-arrow" clip-path="url(#clip0_1983_91)">
+                      <path id="Vector" d="M15.4727 1.99935L2.5262 1.99935C2.39512 1.9997 2.26664 2.03047 2.15458 2.08835C2.04252 2.14623 1.95113 2.22903 1.89024 2.32783C1.82935 2.42663 1.80127 2.5377 1.80903 2.64907C1.81679 2.76044 1.86008 2.86791 1.93425 2.9599L8.40751 10.9185C8.67579 11.2485 9.32168 11.2485 9.59068 10.9185L16.0639 2.9599C16.1389 2.8681 16.1828 2.76058 16.191 2.64902C16.1992 2.53746 16.1713 2.42613 16.1103 2.32712C16.0494 2.22811 15.9577 2.14521 15.8453 2.08742C15.7329 2.02963 15.604 1.99917 15.4727 1.99935Z" fill="white"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1983_91">
+                      <rect width="17" height="11" fill="white" transform="matrix(-1 0 0 -1 17.5 11)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+
+                    <!-- Drop down -->
+                    <transition
+                    enter-active-class="transition ease-out duration-300"
+                    enter-from-class="opacity-0 transform scale-95"
+                    enter-to-class="opacity-100 transform scale-100"
+                    leave-active-class="transition ease-in duration-200"
+                    leave-from-class="opacity-100 transform scale-100"
+                    leave-to-class="opacity-0 transform scale-95"
+                  >
+                    <div v-if="showDropDown" class="absolute bg-[#006f32] top-9 w-64 rounded-b-xl shadow-lg">
+                        <ul class=" flex flex-col space-y-4 px-3 py-5 text-sm">
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/journery">Journery management training</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/hygiene">Hygiene & Sanitation training</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/emergency">Emergency Response training</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/gender">Gender based violence training</NuxtLink>
+                          <NuxtLink class="" to="">Security training</NuxtLink>
+                        </ul>
+                    </div>  
+                    </transition>               
+                  </div>
               </ul>
           </nav>
         </div>
      
         <!---------- Mobile Menu ------------->
-        <div class="block md:hidden">
-            <!--- Background overlay ---->
-            <div v-if="menuState" @click.self="toggleMenu" class=" fixed inset-0 z-10 bg-gray-500/20"></div>
+        <div class="block lg:hidden z[10000]">
+          <div class=" flex items-center justify-center">
+        
+            <!-- Slide-over Container -->
+            <div v-show="true"  class="w-full h-full fixed inset-0" >
+              <!-- Background Overlay -->
+              <div @click="toggleSlideover"
+                :class="['transition-all','duration-500','ease-out','inset-0','absolute','bg-gray-900', menuState ? 'opacity-50' : '']" class="w-full h-full opacity-0">
+              </div>
+        
+              <!-- Slide-over Menu -->
+              <div :class="['transition-all','duration-700','ease-out','absolute','right-0', ' top-14' ,'bg-white',' w-72',' h-[28rem]', menuState ? '' : 'translate-x-full']"
+                    class="  rounded-bl-lg"
+              >
+                  <nav class=" flex flex-col space-y-8 pt-20 pb-24 px-16">
+                    <div class="border-b-2 border-gray-300 pb-2 px-2">
+                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/">Home</NuxtLink>
+                    </div>
+                    <div class="border-b-2 border-gray-300 pb-2 px-2">
+                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/about-us">About Us</NuxtLink>
+                    </div>
+                    <div class="border-b-2 border-gray-300 pb-2 px-2">
+                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/trainings">Trainings</NuxtLink>
+                    </div>
+                    <div class="border-b-2 border-gray-300 pb-2 px-2">
+                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/privacy-policy">Privacy Policy</NuxtLink>
+                    </div>
 
-            <!-- Mobile Menu -->
-                <!-- <div v-if="menuState" :class="{'' : menuState}" class="fixed top-30 right-0 w-64 h-96 bg-white shadow-lg z-50 duration-700 ease-out transition-all" > -->
-                    <div
-                    v-show="menuState"
-                    :class="[
-                      'fixed top-28 right-0 w-64 h-96 bg-white shadow-lg z-50 transition-transform duration-700 ease-out',
-                      menuState ? 'translate-x-0' : 'translate-x-full'
-                    ]"
-                  >
-                    <nav class="mt-4 flex justify-center">
-                        <ul class=" flex flex-col font-semibold text-lg text-darkGreen divide-y">
-                            <NuxtLink class=" pt-4 pb-2 " to="/">Home</NuxtLink>
-                            <NuxtLink class=" pt-4 pb-2" to="/about-us">About Us</NuxtLink>
-                            <NuxtLink class=" pt-4 pb-2 " to="/contact-us">Contact Us</NuxtLink>
-                            <NuxtLink class=" pt-4 pb-2 " to="/privacy-policy">Privacy Policy</NuxtLink>
-                            <NuxtLink class=" pt-4 pb-2 " to="/trainers-profile">Trainers Profile</NuxtLink>
-                            <NuxtLink class=" pt-4 pb-2 " to="/trainings">Trainings</NuxtLink>
-                        </ul>
-                    </nav>
+                    <div class="border-b-2 border-gray-300 pb-2 px-2">
+                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/trainers-profile">Trainers Profile</NuxtLink>
+                    </div>
+                  </nav>
+              </div>
             </div>
+
+          </div>
         </div>
         
     </div>
@@ -94,13 +138,24 @@ const menuState = useState<boolean>('menuState', () => false);
 
 const useScroll = useState<boolean>('useScroll', () => false);
 
+const showDropDown = useState<boolean>('showDropDown', ()=> false)
+
 onMounted(() => {
+  menuState.value = false
+  showDropDown.value = false;
   window.addEventListener('scroll', handleScroll);
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
+
+
+// Drop down menu
+const dropDownMenu = () => {
+  console.log(1234)
+  showDropDown.value = !showDropDown.value
+}
 
 // Use this to show / hide border bottom on the header nav
 const handleScroll = () => {
@@ -141,6 +196,23 @@ onBeforeUnmount(() => {
 
 a {
     text-decoration: none;
+}
+
+.router-link-active {
+  text-decoration: underline;
+} 
+
+@media (max-width: 768px) {
+  .router-link-active {
+    text-decoration: none;
+    border-radius: 40px;
+    color: white;
+    background: #007636;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 2px 6px 2px;
+  } 
 }
 
 
