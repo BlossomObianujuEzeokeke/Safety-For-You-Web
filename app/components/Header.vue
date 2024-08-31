@@ -44,7 +44,7 @@
            </div>
 
           <!---------- Navigation Menu ------------>
-          <nav class=" hidden lg:block bg-semiDarkGreen text-white py-4">
+          <nav class=" hidden lg:block bg-semiDarkGreen text-white py-3">
               <ul class="flex justify-center items-center gap-x-8 font-semibold text-sm">
                   <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/">Home</NuxtLink>
                   <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/about-us">About Us</NuxtLink>
@@ -67,13 +67,13 @@
                     <!-- Drop down -->
                     <transition
                     enter-active-class="transition ease-out duration-300"
-                    enter-from-class="opacity-0 transform scale-95"
-                    enter-to-class="opacity-100 transform scale-100"
+                    enter-from-class="opacity-0 transform -translate-y-4"
+                    enter-to-class="opacity-100 transform translate-y-0"
                     leave-active-class="transition ease-in duration-200"
-                    leave-from-class="opacity-100 transform scale-100"
-                    leave-to-class="opacity-0 transform scale-95"
+                    leave-from-class="opacity-100 transform translate-y-0"
+                    leave-to-class="opacity-0 transform -translate-y-4"
                   >
-                    <div v-if="showDropDown" class="absolute bg-[#006f32] top-9 w-64 rounded-b-xl shadow-lg">
+                    <div v-if="showDropDown" class="absolute bg-[#006f32] top-8 w-64 rounded-b-xl shadow-lg">
                         <ul class=" flex flex-col space-y-4 px-3 py-5 text-sm">
                           <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/journery">Journery management training</NuxtLink>
                           <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/hygiene">Hygiene & Sanitation training</NuxtLink>
