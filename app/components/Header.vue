@@ -89,18 +89,18 @@
         </div>
      
         <!---------- Mobile Menu ------------->
-        <div class="block lg:hidden z[10000]">
-          <div class=" flex items-center justify-center">
+        <div class="block lg:hidden">
+          <div class=" relative z-50 flex items-center justify-center">
         
             <!-- Slide-over Container -->
             <div v-show="true"  class="w-full h-full fixed inset-0" >
               <!-- Background Overlay -->
-              <div @click="toggleSlideover"
+              <div @click="toggleMenu"
                 :class="['transition-all','duration-500','ease-out','inset-0','absolute','bg-gray-900', menuState ? 'opacity-50' : '']" class="w-full h-full opacity-0">
               </div>
         
               <!-- Slide-over Menu -->
-              <div :class="['transition-all','duration-700','ease-out','absolute','right-0', ' top-14' ,'bg-white',' w-72',' h-[28rem]', menuState ? '' : 'translate-x-full']"
+              <div :class="['transition-all','duration-700','ease-out','absolute','right-0', ' top-[72px]' ,'bg-white',' w-72',' h-[28rem]', menuState ? '' : 'translate-x-full']"
                     class="  rounded-bl-lg"
               >
                   <nav class=" flex flex-col space-y-8 pt-20 pb-24 px-16">
