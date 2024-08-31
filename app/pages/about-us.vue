@@ -1,6 +1,8 @@
 <template>
     <section class="overlow-hidden">
         <Header />
+
+        <!-- Body -->
         <div class=" pt-16 md:pt-8 lg:pt-28 overflow-hidden">
                  <!-------- Hero ------->
                 <section class="lg:flex w-full h-[300px] md:h-[420px] ">
@@ -93,7 +95,7 @@
                                     <h2 class="font-bold text-base lg:text-lg">Alex Obiora</h2>
                                     <div class="flex items-center justify-center w-full px-4">
                                         <p class="font-medium text-15px lg:text-base ">Managing Consultant</p>
-                                        <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
                                                 <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
                                             </g>
@@ -111,7 +113,7 @@
                                     <h2 class="font-bold text-base lg:text-lg">Irfan PV</h2>
                                     <div class="flex items-center justify-center w-full px-4">
                                         <p class="font-medium text-15px lg:text-base ">Head of Training Dept</p>
-                                        <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
                                                 <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
                                             </g>
@@ -129,7 +131,7 @@
                                     <h2 class="font-bold text-base lg:text-lg">Kamsy Madueke</h2>
                                     <div class="flex items-center justify-center w-full">
                                         <p class="font-medium text-15px lg:text-base ">Learning & Dev. Specialist</p>
-                                        <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
                                                 <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
                                             </g>
@@ -147,7 +149,7 @@
                                     <h2 class="font-bold text-base lg:text-lg">Princewill Ekeji</h2>
                                     <div class="flex items-center justify-center w-full px-4">
                                         <p class="font-medium text-15px ">HSE Manager</p>
-                                        <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
                                                 <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
                                             </g>
