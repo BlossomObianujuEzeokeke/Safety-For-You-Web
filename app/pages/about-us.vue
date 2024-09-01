@@ -165,9 +165,9 @@
 
             <!---------- Gallery ----------->
             <div class="py-8 md:px-16 md:py-16">
-                <h3 class=" text-2xl uppercase pb-8 text-center text-darkGreen md:text-4xl font-bold">gallery</h3>
+                <h3 class=" text-4xl uppercase  lg:pb-8 text-center text-darkGreen md:text-4xl font-bold">gallery</h3>
                     <!------ Gallery 1 -------->
-                    <div class="py-16 mb-14">
+                    <div class="pt-10 mb-8 lg:mb-10">
                         <div>
                             <!-- Grid Layout -->
                             <div class="grid grid-cols-4 gap-0">
@@ -206,7 +206,7 @@
                     </div>
                     
                     <!------- Gallery 2 ------->
-                    <div class="mb-14">
+                    <div class="mb-10 lg:mb-16">
                         <div>
                             <h2 class="font-bold text-[20px] mb-4 uppercase text-darkGreen text-center py-8">advanced fire fighting training</h2>
                             <div class="grid grid-cols-3 gap-0">
