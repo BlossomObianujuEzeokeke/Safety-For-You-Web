@@ -29,7 +29,7 @@
 
                 <!------- About Us ----------->
                 <section class="px-6 sm:px-12 md:px-16 py-8 sm:py-10 md:py-12">
-                    <h2 class="uppercase font-bold text-2xl sm:text-3xl lg:text-[28px] xl:text-4xl text-darkGreen pb-4 sm:pb-5">about us</h2>
+                    <h2 class="uppercase font-bold text-2xl sm:text-2xl lg:text-[28px] xl:text-4xl text-darkGreen pb-4 sm:pb-5">about us</h2>
                     <p class="text-darkGray text-base lg:text-[17px] font-medium" id="leading-p">
                         Safety For You Services Ltd is a leading Health, Safety, Security, and Environmental (HSEC) consultancy. 
                         We specialize in boosting HSEC performance for individuals and organizations through tailored training and expert consultancy.
@@ -83,8 +83,8 @@
 
                 <!--------- Our Team ----------->
                 <section class="py-10 sm:py-12 md:py-16 px-6 sm:px-12 md:px-16 bg-lighterGray" id="team-section">
-                    <h3 class="uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-darkGreen text-center py-4">meet our team</h3>
-                    <p class="text-center text-darkGray text-base sm:text-lg font-medium py-8">Key decision-makers at Safety for you LTD</p>
+                    <h3 class="uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-darkGreen text-center">meet our team</h3>
+                    <p class="text-center text-darkGray text-base sm:text-lg font-medium py-5">Key decision-makers at Safety for you LTD</p>
                 
                     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
                         <!-- Card 1 -->
@@ -208,7 +208,7 @@
                     <!------- Gallery 2 ------->
                     <div class="mb-14">
                         <div>
-                            <h2 class="font-bold text-lg mb-4 capitalize text-center py-8">advanced fire fighting training</h2>
+                            <h2 class="font-bold text-[20px] mb-4 uppercase text-center py-8">advanced fire fighting training</h2>
                             <div class="grid grid-cols-3 gap-0">
                                 <div class="col-span-3 grid grid-rows-1 grid-cols-3">
                                     <img class="w-full h-full object-cover" src="../assets/images/gallery-2/pipe.jpg" alt="Fire pipe">
@@ -230,7 +230,7 @@
                     <!------- Gallery 3 ------->
                     <div class="mb-14">
                         <div>
-                            <h2 class="font-bold text-lg py-8 capitalize text-center">hygiene and basic fire fighting training</h2>
+                            <h2 class="font-bold text-[20px] py-8 uppercase text-center">hygiene and basic fire fighting training</h2>
                             <div class="grid grid-cols-12">
                                 <!-- First row: Three images with equal width -->
                                 <div class="col-span-12 grid grid-cols-12">
@@ -286,7 +286,7 @@
 /* For medium screens */
 @media (min-width: 768px) {
     #team-section {
-        background-image: url('../assets/images/contact-us-right-spiral.png');
+        background-image: url('../assets/images/team-svg-bg.svg');
         background-repeat: no-repeat;
         background-size: 300px;
         background-position: right top;
