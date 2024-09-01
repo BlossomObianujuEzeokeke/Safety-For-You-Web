@@ -208,7 +208,7 @@
                     <!------- Gallery 2 ------->
                     <div class="mb-14">
                         <div>
-                            <h2 class="font-bold text-[20px] mb-4 uppercase text-center py-8">advanced fire fighting training</h2>
+                            <h2 class="font-bold text-[20px] mb-4 uppercase text-darkGreen text-center py-8">advanced fire fighting training</h2>
                             <div class="grid grid-cols-3 gap-0">
                                 <div class="col-span-3 grid grid-rows-1 grid-cols-3">
                                     <img class="w-full h-full object-cover" src="../assets/images/gallery-2/pipe.jpg" alt="Fire pipe">
@@ -230,7 +230,7 @@
                     <!------- Gallery 3 ------->
                     <div class="mb-14">
                         <div>
-                            <h2 class="font-bold text-[20px] py-8 uppercase text-center">hygiene and basic fire fighting training</h2>
+                            <h2 class="font-bold text-[20px] py-8 uppercase text-darkGreen text-center">hygiene and basic fire fighting training</h2>
                             <div class="grid grid-cols-12">
                                 <!-- First row: Three images with equal width -->
                                 <div class="col-span-12 grid grid-cols-12">
