@@ -2,24 +2,25 @@
     <section>
         <Header />
 
-        <div class="pt-16 px-4 md:px-8 lg:px-16 pb-24 lg:pb-48 bg-lightGrayBg" id="privacy-policy">
-            <h1 class="uppercase font-extrabold text-3xl md:text-4xl lg:text-6xl text-darkGray/30 text-center py-4 md:py-6 lg:py-8">
+        <!--- Body ---->
+        <div class="pt-16 md:pt-16 lg:pt-28 px-4 md:px-8 lg:px-16 pb-24 lg:pb-48 bg-lightGrayBg" id="privacy-policy">
+            <h1 class="uppercase font-bold text-3xl md:text-4xl lg:text-6xl text-darkGray/15 text-center py-4 md:py-6 lg:py-8">
                 privacy policy
             </h1>
-            <div class="shadow-md rounded-xl px-4 md:px-8 lg:px-12 pt-10 md:pt-16 lg:pt-20 pb-14 md:pb-20 lg:pb-28 bg-white">
-                <h3 class="uppercase font-bold text-base md:text-lg lg:text-xl text-darkGreen text-center py-8 md:py-10 lg:py-12">
+            <div class="shadow-md border border-darkGray/30 lg:border-veryLightGreen rounded-xl px-4 md:px-8 lg:px-12 pt-10 md:pt-12 lg:pt-14 pb-14 md:pb-20 lg:pb-28 bg-white">
+                <h3 class="uppercase font-bold text-2xl px-12 md:px-0 pt-4 pb-6 md:text-lg lg:text-xl text-darkGreen text-center">
                     hse privacy policy statement
                 </h3>
         
-                <div class="text-base md:text-lg lg:text-xl font-medium text-darkGray space-y-3 md:space-y-4 lg:space-y-5 mb-4">
+                <div class="text-base md:text-[17px] font-medium text-darkGray space-y-3 md:space-y-4 lg:space-y-5 mb-4 leading-8">
                     <p>At Safety For You Services Limited, we are committed to delivering our business objectives while holding health, safety, and environment (HSE) as a core value.</p>
                     <p>Throughout the life-cycle of our activities, we aim to provide a safe and healthy working environment for our employees, contractors, and other stakeholders; to protect the environment; in compliance with extant laws and regulations and international best standards and practices.</p>
                     <p>As a responsible organization, we seek to achieve continuous improvement and sustainability with respect to HSE. A high standard of HSE performance by everyone who works for or with us is critical to the success of our business. Accordingly, we expect our contractors and partners to share our values and ambitions.</p>
                 </div>
         
-                <div class="text-base md:text-lg lg:text-xl font-medium">
+                <div class="text-base md:text-[17px] font-medium">
                     <h3 class="font-bold text-black">It is our policy to:</h3>
-                    <ul class="list-disc space-y-3 md:space-y-4 lg:space-y-5 text-darkGray px-4 md:px-6 lg:px-8">
+                    <ul class="list-disc space-y-3 md:space-y-4 lg:space-y-5 text-darkGray px-4 md:px-6 lg:px-8 leading-8">
                         <li>Comply with all applicable legal and other obligations including Safety For You Services Limited Referential documents, follow industry HSE best practices, etc.</li>
                         <li>Systematically identify and assess all risks to which people, the environment, and assets are exposed, and implement measures to eliminate or reduce such risks to As Low As Reasonably Practicable (ALARP).</li>
                         <li>Adopt the principle of continuous improvement by setting measurable objectives, monitoring and reviewing performance and effectiveness through independent audits and analysis of results.</li>
@@ -33,7 +34,7 @@
                         <p>We expect that all employees familiarize themselves with the content of our HSE Policy and work accordingly, enabling us to reach our objectives within health, safety, and the environment.</p>
                     </ul>
         
-                    <div class="font-bold italic pt-4 md:pt-6 lg:pt-8">
+                    <div class="font-semibold text-lg italic pt-4 md:pt-6 lg:pt-8">
                         <span>Alex. Obiora</span>
                         <br>
                         <span>Managing Consultant</span>
@@ -58,7 +59,7 @@
     background-image: url('../assets/images/privacy-policy-left-spirall.png'), url('../assets/images/privacy-policcy-right-spiral.png');
     background-repeat: no-repeat;
     background-size: 300px;
-    background-position: left top, right top;
+    background-position: left 5%, right 4%;
 }
 
 /* For large screens */
