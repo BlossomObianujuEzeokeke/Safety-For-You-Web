@@ -18,8 +18,9 @@
                             <div class="absolute top-1 left-2 w-44 h-44 rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.8)] to-[rgba(0,82,38,0.8)] z-10"></div>
                         </div> -->
 
-                        <div class="relative w-28 sm:w-36 md:w-48">
-                            <img class="w-full h-full relative z-10 rounded-full" src="../assets/images/S4U.png" alt="Safety For You Logo">
+                        <div class="relative w-28 sm:w-32 md:w-36">
+                            <!-- <img class="w-full h-full relative z-10 rounded-full" src="../assets/images/S4U.png" alt="Safety For You Logo"> -->
+                            <img class="w-full h-full relative z-10 rounded-full" src="../assets/images/safety_for_you_logo.png" alt="Safety For You Logo">
                             <div class="absolute inset-0 w-full h-full rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.5)] to-[rgba(0,82,38,0.5)] z-20"></div>
                         </div>
                         
@@ -82,83 +83,104 @@
                 </section>
 
                 <!--------- Our Team ----------->
-                <section class="py-10 sm:py-12 md:py-16 px-6 sm:px-12 md:px-16 bg-lighterGray" id="team-section">
+                <section class="py-10 sm:py-12 md:py-1 px-12 md:px-16 bg-lighterGray" id="team-section">
                     <h3 class="uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-darkGreen text-center">meet our team</h3>
-                    <p class="text-center text-darkGray text-base sm:text-lg font-medium py-5">Key decision-makers at Safety for you LTD</p>
-                
-                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+                    <p class="text-center text-darkGray text-base sm:text-lg font-medium pb-10 pt-2">Key decision-makers at Safety for you LTD</p>
+                    
+                    <!--- Team Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+  
                         <!-- Card 1 -->
-                        <div class="team-card w-full h-auto aspect-[4/5] border-4 bg-white group border-borderGray rounded-2xl relative overflow-hidden hover:border-darkGreen transition-all duration-700">
-                            <figure class="flex flex-col h-full py-8">
-                                <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" src="../assets/images/alex-obiora-cropped.png" alt="Alex Obiorra">
-                                <figcaption class="flex flex-col border-t z-10 items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%]">
-                                    <h2 class="font-bold text-base lg:text-lg">Alex Obiora</h2>
-                                    <div class="flex items-center justify-center w-full px-4">
-                                        <p class="font-medium text-15px lg:text-base ">Managing Consultant</p>
-                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
-                                                <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                        <div class="team-card lg:h-auto h-[329px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
+                          <NuxtLink to="/" class="flex flex-col h-full">
+                            <!-- Image Section -->
+                            <div class="flex-grow overflow-hidden">
+                              <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-125" src="../assets/images/about_us_partner_1.png" alt="Alex Obiora">
+                            </div>
+                            <!-- Text Section -->
+                            <div class="bg-darkGreen py-2">
+                              <h3 class="text-center text-white font-bold text-xl pb-2">Alex Obiora</h3>
+                              <div class="flex items-center justify-center space-x-4 pb-1">
+                                <p class="text-white font-semibold text-sm lg:text-base">Managing Consultant</p>
+                                <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g class="transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
+                                    <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                          </NuxtLink>
                         </div>
-                    
+                        
                         <!-- Card 2 -->
-                        <div class="team-card w-full h-auto aspect-[4/5] border-4 bg-white group border-borderGray rounded-2xl relative overflow-hidden hover:border-darkGreen transition-all duration-700">
-                            <figure class="flex flex-col h-full mt-4">
-                                <img class="object-cover h-96 transition-transform duration-700 group-hover:scale-105" src="../assets/images/irfan-pv-croppedd.png" alt="Irfan PV" width="800px">
-                                <figcaption class="flex border-t flex-col z-10 items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] py-5">
-                                    <h2 class="font-bold text-base lg:text-lg">Irfan PV</h2>
-                                    <div class="flex items-center justify-center w-full px-4">
-                                        <p class="font-medium text-15px lg:text-base ">Head of Training Dept</p>
-                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
-                                                <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                        <div class="team-card lg:h-auto h-[329px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
+                            <NuxtLink to="/" class="flex flex-col h-full">
+                            <!-- Image Section -->
+                            <div class="flex-grow overflow-hidden">
+                                <img class="object-cover w-full h-full scale-105 mt-6 md:mt-0 lg:scale-110 transition-transform duration-700 group-hover:scale-125" src="../assets/images/about_us_partner_2.png" alt="Irfan PV">
+                            </div>
+                            <!-- Text Section -->
+                            <div class="bg-darkGreen py-2">
+                                <h3 class="text-center text-white font-bold text-xl pb-2">Irfan PV</h3>
+                                <div class="flex items-center justify-center space-x-4 pb-1">
+                                <p class="text-white font-semibold text-sm lg:text-base">Head of Training Dept</p>
+                                <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g class="transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
+                                    <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                                </div>
+                            </div>
+                            </NuxtLink>
                         </div>
-                    
+
                         <!-- Card 3 -->
-                        <div class="team-card w-full h-auto aspect-[4/5] border-4 bg-white group border-borderGray rounded-2xl relative overflow-hidden hover:border-darkGreen transition-all duration-700">
-                            <figure class="flex flex-col h-full pt-5">
-                                <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" src="../assets/images/kamsy-madueke-cropped.png" alt="Kamsy Madueke">
-                                <figcaption class="flex flex-col border-t z-10 items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] py-5">
-                                    <h2 class="font-bold text-base lg:text-lg">Kamsy Madueke</h2>
-                                    <div class="flex items-center justify-center w-full">
-                                        <p class="font-medium text-15px lg:text-base ">Learning & Dev. Specialist</p>
-                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
-                                                <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                        <div class="team-card lg:h-auto h-[329px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
+                        <NuxtLink to="/" class="flex flex-col h-full">
+                            <!-- Image Section -->
+                            <div class="flex-grow overflow-hidden">
+                            <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-125" src="../assets/images/about_us_partner_4.png" alt="Kamsy Madueke">
+                            </div>
+                            <!-- Text Section -->
+                            <div class="bg-darkGreen py-2">
+                            <h3 class="text-center text-white font-bold text-xl pb-2">Kamsy Madueke</h3>
+                            <div class="flex items-center justify-center space-x-4 pb-1">
+                                <p class="text-white font-semibold text-sm lg:text-base">Learning & Dev. Specialist</p>
+                                <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g class="transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
+                                    <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                </g>
+                                </svg>
+                            </div>
+                            </div>
+                        </NuxtLink>
                         </div>
-                    
+                      
                         <!-- Card 4 -->
-                        <div class="team-card w-full h-auto aspect-[4/5] border-4 bg-white group border-borderGray rounded-2xl relative overflow-hidden hover:border-darkGreen transition-all duration-700">
-                            <figure class="flex flex-col h-full pt-5">
-                                <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" src="../assets/images/princewill-ekeji-cropped.png" alt="Princewill Ekeji">
-                                <figcaption class="flex flex-col border-t z-10 items-center justify-center bg-darkGreen text-center text-white absolute bottom-0 left-0 right-0 h-[20%] py-5">
-                                    <h2 class="font-bold text-base lg:text-lg">Princewill Ekeji</h2>
-                                    <div class="flex items-center justify-center w-full px-4">
-                                        <p class="font-medium text-15px ">HSE Manager</p>
-                                        <svg class="hidden lg:block ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g class=" transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
-                                                <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                        <div class="team-card lg:h-auto h-[329px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
+                          <NuxtLink to="/" class="flex flex-col h-full">
+                            <!-- Image Section -->
+                            <div class="flex-grow overflow-hidden">
+                              <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-125" src="../assets/images/about_us_partner_3.png" alt="Princewill Ekeji">
+                            </div>
+                            <!-- Text Section -->
+                            <div class="bg-darkGreen py-2">
+                              <h3 class="text-center text-white font-bold text-xl pb-2">Princewill Ekeji</h3>
+                              <div class="flex items-center justify-center space-x-4 pb-1">
+                                <p class="text-white font-semibold text-sm lg:text-base">HSE Manager</p>
+                                <svg class="ml-2" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g class="transition-all duration-700 group-hover:opacity-[1]" opacity="0.2">
+                                    <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                          </NuxtLink>
                         </div>
                     </div>
+                      
+                      
+
                 </section>
                 
 
@@ -294,7 +316,7 @@
 }
 
 .team-card {
-    background-image: url('../assets/images/background-spiral.png');
+    background-image: url('../assets/images/keyteam-svg-bg.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: right top;
