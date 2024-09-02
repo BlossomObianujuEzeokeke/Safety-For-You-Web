@@ -93,10 +93,10 @@
           <div class=" relative z-50 flex items-center justify-center">
         
             <!-- Slide-over Container -->
-            <div v-show="true"  class="w-full h-full fixed inset-0" >
+            <div v-show="true" :class="[menuState ? '':'invisible']"  class="w-full h-full fixed inset-0" >
               <!-- Background Overlay -->
               <div @click="toggleMenu"
-                :class="['transition-all','duration-500','ease-out','inset-0','absolute','bg-gray-900', menuState ? 'opacity-50' : '']" class="w-full h-full opacity-0">
+                :class="['transition-all','duration-500','ease-out','inset-0','absolute','bg-gray-900', menuState ? 'opacity-50' : '']" class=" opacity-0">
               </div>
         
               <!-- Slide-over Menu -->
