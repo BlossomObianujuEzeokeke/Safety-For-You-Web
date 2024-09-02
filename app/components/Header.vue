@@ -212,6 +212,7 @@ a {
     align-items: center;
     justify-content: center;
     padding: 6px 2px 6px 2px;
+    min-width: 170px;
   } 
 }
 
