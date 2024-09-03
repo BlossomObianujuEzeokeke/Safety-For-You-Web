@@ -1,13 +1,13 @@
 <template>
-    <footer class=" bg-semiDarkGreen pt-5 md:pt-10" id="footer">
+    <footer class=" bg-semiDarkGreen border-t-[1px] border-black/40 pt-5 md:pt-10" id="footer">
         <div class="">
             <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-x-16">
 
                 <!------ Logo ------->
-                <div class=" pb-2 border-b-[1.5px] border-mainGreen md:border-none md:pb-0">
-                  <div class="flex items-center justify-center gap-x-2">
+                <div class=" pb-2 lg:pl-8 lg:pt-2 border-b-[1.5px] border-mainGreen md:border-none md:pb-0">
+                  <div class="flex items-center justify-center gap-x-4">
                     <img class=" h-12 md:h-16" src="../assets/images/S4U.png" alt="Safety For You Logo">
-                    <span class=" text-3xl md:text-4xl font-bold text-white">SafetyForYou</span>
+                    <span class=" text-3xl md:text-[40px] font-extrabold text-white">SafetyForYou</span>
                   </div>
                 </div>
                 
@@ -135,8 +135,28 @@
     background-image: url('../assets/images/footer-spiral.png');
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: 900px;
-    background-position: -85% 45%;
+    background-size: 950px;
+    background-position: -105% 45%;
+    /*-85%-1325 -60%-1481 45%-1702 */
+}
+
+/* Adjust position for wider screens */
+@media screen and (min-width: 1500px) {
+  #footer {
+      background-position: -50% 45%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  #footer {
+      background-position: -40% 45%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #footer {
+      background-position: -19% 45%; /* Align to the left edge on very large screens */
+  }
 }
 
 @media screen and (max-width: 480px) {
