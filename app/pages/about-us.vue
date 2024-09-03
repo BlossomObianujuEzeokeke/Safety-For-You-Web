@@ -196,31 +196,31 @@
                             
                                 <!-- Column #1 (Tall Image 1) -->
                                 <div class="col-span-1 row-span-3">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/adult-manequin-on-table.jpg" alt="Adult Manequin" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/adult-manequin-on-table.jpg" alt="Adult Manequin" />
                                 </div>
                             
                                 <!-- Column #2 (Square Images 3 & 4) -->
                                 <div class="col-span-1 grid grid-rows-2 gap-0">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/two-manequins-on-table.jpg" alt="Image 03" />
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/man-and-woman-standing.jpg" alt="Image 04" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/two-manequins-on-table.jpg" alt="Image 03" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/man-and-woman-standing.jpg" alt="Image 04" />
                                 </div>
                             
                                 <!-- Column #3 (Square Images 6 & 7) -->
                                 <div class="col-span-1 grid grid-rows-2 gap-0">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/red-plastic-tables.jpg" alt="Image 06" />
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/baby-manequin.jpg" alt="Image 07" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/red-plastic-tables.jpg" alt="Image 06" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/baby-manequin.jpg" alt="Image 07" />
                                 </div>
                             
                                 <!-- Column #4 (Tall Image 9) -->
                                 <div class="col-span-1 row-span-3">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/man-on-stretcher.jpg" alt="Image 09" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/man-on-stretcher.jpg" alt="Image 09" />
                                 </div>
                             
                                 <!-- Bottom Row Images (Wide Images 2, 5, 8) -->
                                 <div class="col-span-4 grid grid-cols-3 gap-0">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/crowd-around-table.jpg" alt="Image 02" />
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/cpr-session.jpg" alt="Image 05" />
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-1/man-and-woman-giving-lecture.jpg" alt="Image 08" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/crowd-around-table.jpg" alt="Image 02" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/cpr-session.jpg" alt="Image 05" />
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_1/man-and-woman-giving-lecture.jpg" alt="Image 08" />
                                 </div>
                         
                             </div>
@@ -233,17 +233,17 @@
                             <h2 class="font-bold text-[20px] mb-4 uppercase text-darkGreen text-center py-8">advanced fire fighting training</h2>
                             <div class="grid grid-cols-3 gap-0">
                                 <div class="col-span-3 grid grid-rows-1 grid-cols-3">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-2/pipe.jpg" alt="Fire pipe">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-2/hose.jpg" alt="Hose">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-2/man-fixing-pipe.jpg" alt="Hands fixing pipe">
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_2/pipe.jpg" alt="Fire pipe">
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_2/hose.jpg" alt="Hose">
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_2/man-fixing-pipe.jpg" alt="Hands fixing pipe">
                                 </div>
 
                                 <div class="col-span-3">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-2/group.jpg" alt="Group training">
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_2/group.jpg" alt="Group training">
                                 </div>
                                 <div class="col-span-3 grid grid-cols-2">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-2/hands-fixing-pipe.jpg" alt="Hands fixing pipe">
-                                    <img class="w-full h-full object-cover" src="../assets/images/gallery-2/refinery.jpg" alt=" Fire training">
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_2/hands-fixing-pipe.jpg" alt="Hands fixing pipe">
+                                    <img class="w-full h-full object-cover" src="../assets/images/gallery_2/refinery.jpg" alt=" Fire training">
                                 </div>
                             </div>
                         </div>
@@ -256,16 +256,16 @@
                             <div class="grid grid-cols-12">
                                 <!-- First row: Three images with equal width -->
                                 <div class="col-span-12 grid grid-cols-12">
-                                    <img class="col-span-4 w-full h-full object-cover" src="../assets/images/gallery-3/peopl-around-table-2.jpg" alt="Training session">
-                                    <img class="col-span-4 w-full h-full object-cover" src="../assets/images/gallery-3/people-around-table-1.jpg" alt="Another training session">
-                                    <img class="col-span-4 w-full h-full object-cover" src="../assets/images/gallery-3/people-sitting.jpg" alt="Training participant's">
+                                    <img class="col-span-4 w-full h-full object-cover" src="../assets/images/gallery_3/peopl-around-table-2.jpg" alt="Training session">
+                                    <img class="col-span-4 w-full h-full object-cover" src="../assets/images/gallery_3/people-around-table-1.jpg" alt="Another training session">
+                                    <img class="col-span-4 w-full h-full object-cover" src="../assets/images/gallery_3/people-sitting.jpg" alt="Training participant's">
                                 </div>
                     
                                 <!-- Second row: Images 4, 5, and 6 on the same line horizontally -->
                                 <div class="col-span-12 grid grid-cols-12">
-                                    <img class="col-span-5 w-full h-full object-cover" src="../assets/images/gallery-3/fire-training-2.jpg" alt="Fire training"> <!-- Image 4 -->
-                                    <img class="col-span-2 w-full h-full object-cover" src="../assets/images/gallery-3/fire-training-1.jpg" alt="Fire training"> <!-- Image 5 -->
-                                    <img class="col-span-5 w-full h-full object-cover" src="../assets/images/gallery-3/fire-training-3.jpg" alt="Fire training"> <!-- Image 6 -->
+                                    <img class="col-span-5 w-full h-full object-cover" src="../assets/images/gallery_3/fire-training-2.jpg" alt="Fire training"> <!-- Image 4 -->
+                                    <img class="col-span-2 w-full h-full object-cover" src="../assets/images/gallery_3/fire-training-1.jpg" alt="Fire training"> <!-- Image 5 -->
+                                    <img class="col-span-5 w-full h-full object-cover" src="../assets/images/gallery_3/fire-training-3.jpg" alt="Fire training"> <!-- Image 6 -->
                                 </div>
                             </div>
                         </div>
