@@ -19,9 +19,10 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
     <Welcome v-if="!posts?.length" /> -->
 
     <!--------- Body ---------->
-    <div class=" pt-28">
-              <!------ Hero ------->
-      <div class="hidden md:flex relative overflow-y-hidden h-[39rem] border-b">
+    <div class=" pt-28 overflow-hidden">
+
+      <!------ Hero ------->
+      <div class="hidden lg:flex relative overflow-y-hidden h-[39rem] border-b">
 
         <!-- SVG Div -->
         <div class="w-[70rem] relative z-20">
@@ -85,15 +86,43 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         </div>
 
         <!-- Image Div -->
-        <div class=" w-full relative z-10 overflow-hidden">
-          <img class="object-cover w-full h-full" src="../assets/images/hero-img-medic.jpg" alt="Medical Doctors">
+        <div  class=" flex w-full relative z-10 overflow-hidden">
+          <div id="hero-image-container" class="">
+            <img class="object-cover w-full h-full" src="../assets/images/home_hero_1.jpg" alt="Medical Doctors">
+            <img class="object-cover w-full h-full" src="../assets/images/home_hero_2.jpg" alt="Male workers">
+            <img class="object-cover w-full h-full" src="../assets/images/home_hero_3.jpg" alt="Male and female worker">
+
+            <!-- Create duplicate of first image to enable continuous slide --->
+            <img class="object-cover w-full h-full" src="../assets/images/home_hero_1.jpg" alt="Medical Doctors">
+
+          </div>
+
         </div>
+      </div>
+
+      <!---- Hero Mobile ---->
+      <div class="px-2 lg:hidden">
+        <h1 class="capitalize font-bold text-[1.4rem] text-black leading-35px">safeguarding lives protecting environments empowering organizations</h1>
+        
+        
+        <div >
+          <div id="mobile-hero-image" class="flex items-center justify-center py-16">
+            <div class="  rounded-full w-[250px] h-[250px] md:w-[300px] md:h-[300px] border-4 border-mainGreen">
+              <img src="../assets/images/two_male_workers_mobile_hero.jpg" alt="Two workers" class="rounded-full w-full h-full object-cover">
+            </div>
+          </div>
+
+          <h3 class=" font-bold text-center">Safety For You Ltd: Your trusted partner in comprehensive HSE training and consultancy</h3>
+
+          <button class=" uppercase text-white bg-darkGreen font-bold text-base rounded-lg w-full py-2 mt-4 mb-6">get started</button>
+        </div>
+        
       </div>
 
 
       <!----- Logo Slider ----->
       <div class="py-8">
-        <h3 class="text-center text-semiDarkGreen font-semibold py-3 ">Trusted By Partners from around the World</h3>
+        <h3 class="hidden text-center text-semiDarkGreen font-bold text-base italic py-3 md:block ">Trusted By Partners from around the World</h3>
         <div class="overflow-hidden" id="logo-slider">
           <div class="flex items-center space-x-12 animate-yoyo">
             <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-1.png" alt="American Safety and Health Institute logo">
@@ -119,18 +148,17 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 
 
       <!------ Safety For You Services -------->
-      <div class="flex flex-col md:flex-row justify-around items-center pl-8 md:pl-16 py-12 md:py-24 border-b border-semiDarkGreen">
+      <div class="flex flex-col md:flex-row justify-around items-center px-4 md:px-0 md:pl-16 py-12 md:py-24 border-b border-semiDarkGreen">
         <!-- Text Section -->
         <div class="w-full md:w-[55%] mb-8 md:mb-0">
-          <h3 class="capitalize text-[28px] md:text-3xl font-bold text-darkGreen pb-4 md:pb-8">Safety For You Services LTD</h3>
-          <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[1.5]">
+          <h3 class=" uppercase text-xl text-center md:text-start md:text-3xl font-bold text-darkGreen pb-4 md:pb-5">Safety For You Services LTD</h3>
+          <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[30px]">
             Welcome to Safety For You Services Ltd. We understand that interactions between workers and equipment impact health, safety, and the environment.
             Without proper management, these interactions can harm people, assets, and the environment.
             Unsafe acts and conditions have led to the loss of lives and damage to assets and surroundings.
           </p>
           <br>
-          <br>
-          <p class="text-darkGray text-[15px] md:text-[17px] font-medium">
+          <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[30px]">
             Investing in health and safety training is essential to prevent workplace incidents.
             Every organization must integrate Health, Safety, and Environment (HSE) training into core operations to address HSE issues and meet policy objectives.
             This is crucial for NGO staff in conflict-affected communities who face significant risks.
@@ -140,7 +168,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         </div>
       
         <!-- Circular Image Section -->
-        <div id="safety4uservices" class="relative w-full md:w-[45%] flex justify-center hidden md:flex">
+        <div id="safety4uservices" class="hidden relative w-full md:w-[45%] lg:flex justify-center">
           <div class="flex relative overflow-hidden rounded-full w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] border-2 border-mainGreen">
             <img src="../assets/images/S4u-services-section.jpg" alt="male and Female worker" class="rounded-full w-full h-full object-cover">
             <!-- <img src="../assets/images/S4U-services-section-bg.png" alt="male and Female worker" class=" w-96 h-96"> -->
@@ -148,61 +176,163 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         </div>
       </div>
 
-      <!--------- Carousel Section---------->
-
-      <div class="pt-16 pb-16 px-16">
+      <!--------- Carousels Section---------->
+      <div class="pt-16 pb-16 px-10 lg:px-16">
         
-        <div class="relative" id="aid-workers-section">
-          <!-- Text overlay -->
-          <h3 class="absolute font-bold text-lg text-semiDarkGreen italic top-[25%] left-[32%] z-10">
-              Aid Workers Braving Risks for a Safer World
-          </h3>
-      
-          <!-- Spiral background here -->
-          <img class="w-full" src="../assets/images/aid-workers-spiral-bg.png" alt="Spiral Background">
-      
-          <!-- Carousel Container -->
-          <div class="absolute inset-0 flex justify-center items-center">
-              <div class="flex w-[1050px]">
-                  <!-- Carousel Items -->
-                  <div class="rounded-full w-[350px] h-[350px] border-2 border-mainGreen">
-                      <img src="../assets/images/S4u-services-section.jpg" alt="male and Female worker" class="rounded-full w-full h-full object-cover">
-                  </div>
-                  <div class="rounded-full w-[350px] h-[350px]  border-2 border-mainGreen">
-                      <img src="../assets/images/S4u-services-section.jpg" alt="male and Female worker" class="rounded-full w-full h-full object-cover">
-                  </div>
-                  <div class="rounded-full w-[350px] h-[350px] border-2 border-mainGreen">
-                      <img src="../assets/images/S4u-services-section.jpg" alt="male and Female worker" class="rounded-full w-full h-full object-cover">
-                  </div>
-              
-             
-              </div>
-          </div>
-        </div>
-        <div class=" flex border border-[#B7F1B9] rounded-2xl bg-white shadow-lg py-8 px-6">
-            <div class=" w-[20%]">
+        <!--- Image carousel ----->
+        <div></div>
+
+        <!--- Text Carousel-->
+        <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-2xl bg-white shadow-none lg:shadow-lg py-8 px-0 lg:px-6">
+            <div class=" hidden lg:block w-[20%]">
                 <img class=" w-full" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
             </div>
-            <div class=" w-[80%] flex flex-col items-end justify-between pb-2 pt-4">
-              <p class="font-bold italic text-black">
+            <div class=" w-full lg:w-[80%] flex flex-col items-end justify-between pb-2 pt-4">
+              <p class="font-bold normal-case lg:italic text-black">
                 Safety For You Services Ltd recognizes humanitarian personnel and those who have died working for humanitarian causes.
                  We join the rest of the world on the 19th of August each year to mark the world humanitarian day.
               </p>
               
               <!-- Text slider here -->
-              <div class="text-mainGreen font-bold space-x-16" id="text-slider">
-                <span>Hauwa Liman (ICRC)</span>
-                <span>Saifura Hussaini Ahmed Khorsa (ICRC)</span>
-                <span>Grace Taku (Action Against Hunger)</span>
-                <span>Michael Nnadi (Good Shepherd Major Seminary)</span>
-                <span>Clementina Ukonga (UN)</span>
-                <span>Ladi Bello (Medicines San Frontier)</span>
-                <span>Faye Mooney (Mercy Corps)</span>
-                <span>Ibrahim Abubakar (International Rescue Mission)</span>
+              <div class="overflow-hidden w-full pt-4 lg:pt-0">
+                <div class="flex justify-around space-x-16 animate-scroll text-darkGreen text-base font-bold" id="text-slider">
+                    <span>Hauwa Liman (ICRC)</span>
+                    <span>Saifura Hussaini Ahmed Khorsa (ICRC)</span>
+                    <span>Grace Taku (Action Against Hunger)</span>
+                    <span>Michael Nnadi (Good Shepherd Major Seminary)</span>
+                    <span>Clementina Ukonga (UN)</span>
+                    <span>Ladi Bello (Medicines San Frontier)</span>
+                    <span>Faye Mooney (Mercy Corps)</span>
+                    <span>Ibrahim Abubakar (International Rescue Mission)</span>
+
+
+                    <span>Hauwa Liman (ICRC)</span>
+                    <span>Saifura Hussaini Ahmed Khorsa (ICRC)</span>
+                    <span>Grace Taku (Action Against Hunger)</span>
+                    <span>Michael Nnadi (Good Shepherd Major Seminary)</span>
+                    <span>Clementina Ukonga (UN)</span>
+                    <span>Ladi Bello (Medicines San Frontier)</span>
+                    <span>Faye Mooney (Mercy Corps)</span>
+                    <span>Ibrahim Abubakar (International Rescue Mission)</span>
+                </div>
               </div>
-          
             </div>
         </div>
+      </div>
+
+      <div class=" bg-midGray py-10 space-y-8 px-8 md:px-16">
+        <p class="text-black font-semibold text-xl leading-[35px]">Aid workers often operate in challenging and potentially dangerous environments, 
+          where they may face risks such as natural disasters, conflicts, security threats or health emergencies
+        </p>
+
+        <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[35px]">
+          In 2022, a total of 235 attacks occurred in three dozen countries, which resulted in more than 400 humanitarian workers harmed, 
+          including 116 killed. South Sudan accounted for the highest casualty count, followed by Mali, Myanmar, and the Democratic Republic of Congo.
+        </p>
+
+        <p class="text-black text-center md:text-start font-semibold text-xl">
+          What is the Solution?
+        </p>
+
+        <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[35px]">
+          This is where we come in. Safety For You Services LTD, is a Health, Safety, Security and Environmental consultancy company,
+           offering its services to aid organizations seeking visible improvement in the Health, Safety, security, and well-being of their 
+           staff deployed for humanitarian aid missions across the world.
+        </p>
+      </div>
+
+      <!------- Our Services ----------->
+      <div class="pt-10 lg:pt-20 pb-24 space-y-8 px-4 md:px-16 bg-white">
+
+          <!---- Div 1 ---->
+          <div class="">
+            <h3 class=" uppercase font-bold text-lg text-center md:text-start text-darkGreen md:text-[28px] pb-2 lg:pb-0">our services</h3>
+            <div class="flex items-center justify-items-center">
+              <div>
+                <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[30px] mb-4">
+                  Our services are indispensable in ensuring the safety of aid workers and those they assist. 
+                  Safety For You Services Ltd is a premier Health, Safety, Security, and Environmental (HSE) consultancy company,
+                    dedicated to aiding organizations in achieving visible improvements in the health, safety, security, and well-being of their 
+                    staff deployed on humanitarian aid missions globally.
+                </p>
+  
+                <h4 class="text-black text-base font-semibold leading-[30px]"> Crucial HSE Training Services for Humanitarian Staff</h4>
+                <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[30px]"> We offer essential training services designed to:</p>
+                <ul class=" list-disc text-darkGray text-[15px] md:text-[17px] font-medium leading-[30px] px-6">
+                  <li>Equip humanitarian staff with vital knowledge and skills for effective emergency response.</li>
+                  <li>Minimize injury severity and save lives.</li>
+                  <li>Promote a culture of safety within teams.</li>
+                  <li>Enhance workplace safety and contribute to community well-being.</li>
+                  <li>Aid in effective risk management and injury prevention.</li>
+                </ul>
+              </div>
+
+              <div class="hidden lg:block">
+                 <img class="h-[550px] w-[3200px]" src="../assets/images/services_circle_images.jpg" alt="Our Services image">
+              </div>
+            </div>
+          </div>
+         
+
+          <!----- Div 2 ------>
+          <div class="mb-8">
+            <h3 class="uppercase font-extrabold text-3xl md:text-4xl lg:text-6xl text-darkGray/30 text-center py-4 md:py-12 lg:py-4">our services</h3>
+            <div class=" py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:space-x-3 space-y-4 lg:space-y-0">
+              
+              <!--- Card 1 --->
+              <div class=" shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+                <h4 class="font-semibold text-base md:text-lg py-4 capitalize">comprehensive training programs</h4>
+                <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
+                  <li>Journey Management/Safe Driving: Enhance travel safety.</li>
+                  <li>Water, Sanitation, and hygiene (WASH): Maintain health in camps.</li>
+                  <li>Camp Coordination and Management: Streamline operations in camps.</li>
+                  <li>First Aid & CPR: Acquire life-saving skills.</li>
+                  <li>Firefighting: Prepare for fire emergencies.</li>
+                  <li>Hostile Environment Awareness (HEAT): Equip for high-risk environments.</li>
+                  <li>Gender-Based Violence (GBV): Address and prevent GBV in humanitarian contexts.</li>
+                </ul>
+              </div>
+          
+              <!--- Card 2 --->
+              <div class="shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+                <h4 class="font-semibold text-base md:text-lg py-4 capitalize">expert consultancy services</h4>
+                <p class="font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray">We offer consultancy services to help organizations develop procedures aligned with international best practices:</p>
+                <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
+                  <li>Journey Management Procedures.</li>
+                  <li>Site Contingency/Emergency</li>
+                  <li>Water, Sanitation, and Hygiene Guidelines/Procedures and Audits.</li>
+                  <li>We aim to build partnerships that enhance safety and efficiency in your operational areas.</li>
+                </ul>
+              </div>
+          
+              <!--- Card 3 --->
+              <div class="shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+                <h4 class="font-semibold text-base md:text-lg py-4 capitalize">additional services</h4>
+                <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
+                  <li>Audit/Inspection of Internally Displaced Camps: Ensure compliance with legislations.</li>
+                  <li>Induction of Aid Workers Prior to Mobilization: Pre-deployment training for safety.</li>
+                  <li>Development of Site-Specific Emergency</li>
+                  <li>Response Plans: Tailored emergency plans.</li>
+                  <li>Environmental Monitoring and Water Quality: Rigorous environmental checks.</li>
+                  <li>Vector Control: Minimize disease transmission risks.</li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          
+          <!---- Div 3 ----->
+          <div class="">
+            <div id="construction_workers_section" class="flex items-center justify-center">
+              <img src="../assets/images/construction_workers.png" alt="Construction Worksers">
+            </div>
+            <div class=" flex flex-col items-center justify-center px-4 text-center lg:px-14">
+              <p class=" text-base lg:text-[26px] font-bold leading-6 lg:leading-9 text-darkGreen">Ensure the safety of your workforce with our comprehensive training programs. Protect your team, redice risks, and promote a culture of safety.</p>
+              <NuxtLink to="/trainings" class=" font-semibold text-base lg:text-xl py-2 underline text-linkBlue ">Learn more about our trainings</NuxtLink>
+            </div>
+          </div>
+         
+
       </div>
     </div>
 
@@ -212,17 +342,63 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 </template>
 
 <style scoped>
+
+#mobile-hero-image {
+  background-image: url('../assets/images/mobile_hero_bg.svg');
+  background-repeat: no-repeat;
+  background-size: 550px;
+  background-position: center;
+}
+
 #hero-svg {
   fill: var(--White, #FFF);
   stroke-width: 3px;
   stroke: var(--Main-Green, #4CAF4F);
 }
 
+/* Container for the images */
+#hero-image-container {
+  display: flex; /* Align images horizontally */
+  width: 300%; /* 100% for each image, total 300% */
+  animation: slide 18s infinite; /* Infinite sliding animation */
+}
+
+#hero-image-container img {
+  width: 100%; /* Each image takes up 100% of its container */
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+  0% {
+      transform: translateX(0%); /* Show the first image */
+  }
+  16.66% {
+      transform: translateX(0%); /* Hold the first image */
+  }
+  33.33% {
+      transform: translateX(-100%); /* Slide to the second image */
+  }
+  50% {
+      transform: translateX(-100%); /* Hold the second image */
+  }
+  66.66% {
+      transform: translateX(-200%); /* Slide to the third image */
+  }
+  83.33% {
+      transform: translateX(-200%); /* Hold the third image */
+  }
+  100% {
+      transform: translateX(-300%); /* Return to the first image */
+  }
+}
+
+
 #safety4uservices {
-  background-image: url('../assets/images/S4U-services-section-bg.png');
+  background-image: url('../assets/images/safety_for_you_ltd_spiral_bg.svg');
   background-repeat: no-repeat;
-  background-size: 400px;
-  background-position: center right;
+  background-size: 250px;
+  background-position: top right;
 }
 
 #logo-slider {
@@ -249,32 +425,51 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 }
 
 #text-slider {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  gap: 2rem; /* Equal spacing between elements */
+  min-width: 100%; /* Ensure the slider occupies full width */
+}
+
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: inline-flex;
   white-space: nowrap;
-  width: 100%;
-}
-
-#text-slider span {
-  display: inline-block;
-  padding-right: 4rem; /* Space between items */
-  animation: slide-linear-double 20s linear infinite;
+  animation: scroll 40s linear infinite; /* Consistent speed across all screen sizes */
+  width: calc(200% + 2rem);
 }
 
 
-@keyframes slide-linear-double {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%)
-  }
-
-}
 
 #right-spiral {
   fill: var(--Main-Green, #4CAF4F);
+}
+
+
+
+
+#construction_workers_section {
+  background-image: url('../assets/images/construction_workers_left_spiral._bg.svg'), url('../assets/images/construction_workers_right_spiral_bg.svg');
+  background-repeat: no-repeat;
+  background-position: calc(50% - 280px) 58%, calc(50% + 280px) 58%;
+  height: 500px;
+  background-size: 720px;
+}
+
+/* For small screens */
+@media (max-width: 767px) {
+  #construction_workers_section {
+    background-position: calc(50% - 120px) 58%, calc(50% + 120px) 58%;
+    height: 250px;
+   background-size: 350px;
+  }
 }
 
 </style>
