@@ -11,12 +11,6 @@
                     </div>
                     <div class=" flex flex-col items-center justify-end sm:justify-center h-full w-full lg:w-1/2 pb-8 sm:pb-10 pt-16 md:pb-0 space-y-4 sm:space-y-5 md:space-y-8" id="right-hero">
                         <h1 class="uppercase font-bold text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white z-10">who we are</h1>
-                        
-                        <!-- Image with circular gradient overlay -->
-                        <!-- <div class="relative w-28 sm:w-36 md:w-48">
-                            <img class="w-full h-full rounded-full" src="../assets/images/S4U.png" alt="Safety For You Logo">
-                            <div class="absolute top-1 left-2 w-44 h-44 rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.8)] to-[rgba(0,82,38,0.8)] z-10"></div>
-                        </div> -->
 
                         <div class="relative w-28 sm:w-32 md:w-36">
                             <!-- <img class="w-full h-full relative z-10 rounded-full" src="../assets/images/S4U.png" alt="Safety For You Logo"> -->
@@ -178,9 +172,6 @@
                           </NuxtLink>
                         </div>
                     </div>
-                      
-                      
-
                 </section>
                 
 
