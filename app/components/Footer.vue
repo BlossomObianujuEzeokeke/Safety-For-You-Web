@@ -132,34 +132,24 @@
 <style scoped>
 
 #footer {
-    background-image: url('../assets/images/footer-spiral.png');
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+  background-image: url('../assets/images/footer-spiral.png');
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 765px) {
+  #footer {
     background-size: 950px;
-    background-position: -105% 45%;
+    background-position: calc(10% - 350px) center;
+    /*background-position: -85% 60%;*/
     /*-85%-1325 -60%-1481 45%-1702 */
-}
-
-/* Adjust position for wider screens */
-@media screen and (min-width: 1500px) {
-  #footer {
-      background-position: -50% 45%;
   }
 }
 
-@media screen and (min-width: 1700px) {
-  #footer {
-      background-position: -40% 45%;
-  }
-}
 
-@media screen and (min-width: 1920px) {
-  #footer {
-      background-position: -19% 45%; /* Align to the left edge on very large screens */
-  }
-}
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 764px) {
   #footer {
     background-size: 800px;
     background-position: center;
