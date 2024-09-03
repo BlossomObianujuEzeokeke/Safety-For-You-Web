@@ -24,7 +24,7 @@
 
                 <!------- About Us ----------->
                 <section class="px-6 sm:px-12 md:px-16 py-8 sm:py-10 md:py-12">
-                    <h2 class="uppercase font-bold text-2xl sm:text-2xl lg:text-[28px] xl:text-4xl text-darkGreen pb-4 sm:pb-5">about us</h2>
+                    <h2 class="uppercase font-bold text-2xl sm:text-2xl lg:text-[28px] text-darkGreen pb-4 sm:pb-5">about us</h2>
                     <p class="text-darkGray text-base lg:text-[17px] font-medium" id="leading-p">
                         Safety For You Services Ltd is a leading Health, Safety, Security, and Environmental (HSEC) consultancy. 
                         We specialize in boosting HSEC performance for individuals and organizations through tailored training and expert consultancy.
@@ -77,8 +77,8 @@
                 </section>
 
                 <!--------- Our Team ----------->
-                <section class="py-10 sm:py-12 md:py-1 px-12 md:px-16 bg-lighterGray" id="team-section">
-                    <h3 class="uppercase font-bold text-2xl sm:text-3xl md:text-4xl text-darkGreen text-center">meet our team</h3>
+                <section class="py-10 md:pt-20 md:pb-40 px-12 md:px-16 bg-lighterGray" id="team-section">
+                    <h3 class="uppercase font-bold text-xl md:text-[28px] text-darkGreen text-center">meet our team</h3>
                     <p class="text-center text-darkGray text-base sm:text-lg font-medium pb-10 pt-2">Key decision-makers at Safety for you LTD</p>
                     
                     <!--- Team Cards -->
