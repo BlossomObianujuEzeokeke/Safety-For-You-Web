@@ -180,7 +180,9 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       <div class="pt-16 pb-16 px-10 lg:px-16">
         
         <!--- Image carousel ----->
-        <div></div>
+        <div>
+
+        </div>
 
         <!--- Text Carousel-->
         <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-2xl bg-white shadow-none lg:shadow-lg py-8 px-0 lg:px-6">
@@ -272,7 +274,6 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </div>
             </div>
           </div>
-         
 
           <!----- Div 2 ------>
           <div class="mb-8">
@@ -327,12 +328,11 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               <img src="../assets/images/construction_workers.png" alt="Construction Worksers">
             </div>
             <div class=" flex flex-col items-center justify-center px-4 text-center lg:px-14">
-              <p class=" text-base lg:text-[26px] font-bold leading-6 lg:leading-9 text-darkGreen">Ensure the safety of your workforce with our comprehensive training programs. Protect your team, redice risks, and promote a culture of safety.</p>
+              <p class=" text-base lg:text-[26px] font-bold leading-6 lg:leading-9 text-darkGreen">Ensure the safety of your workforce with our comprehensive training programs. Protect your team, reduce risks, and promote a culture of safety.</p>
               <NuxtLink to="/trainings" class=" font-semibold text-base lg:text-xl py-2 underline text-linkBlue ">Learn more about our trainings</NuxtLink>
             </div>
           </div>
          
-
       </div>
     </div>
 
@@ -453,8 +453,6 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 }
 
 
-
-
 #construction_workers_section {
   background-image: url('../assets/images/construction_workers_left_spiral._bg.svg'), url('../assets/images/construction_workers_right_spiral_bg.svg');
   background-repeat: no-repeat;
@@ -463,11 +461,20 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
   background-size: 720px;
 }
 
+/* For medium screens */
+@media (min-width: 501px) and (max-width: 770px) {
+  #construction_workers_section {
+    background-position: calc(50% - 180px) 58%, calc(50% + 180px) 58%;
+    height: 400px;
+   background-size: 550px;
+  }
+}
+
 /* For small screens */
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   #construction_workers_section {
     background-position: calc(50% - 120px) 58%, calc(50% + 120px) 58%;
-    height: 250px;
+    height: 300px;
    background-size: 350px;
   }
 }
