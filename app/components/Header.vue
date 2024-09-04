@@ -47,7 +47,7 @@
           <nav class=" hidden lg:block bg-semiDarkGreen text-white py-3">
               <ul class="flex justify-center items-center gap-x-8 font-semibold text-sm">
                   <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/">Home</NuxtLink>
-                  <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/about-us">About Us</NuxtLink>
+                  <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/about">About Us</NuxtLink>
                   <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/contact-us">Contact Us</NuxtLink>
                   <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/privacy-policy">Privacy Policy</NuxtLink>
                   <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/trainers-profile">Trainers Profile</NuxtLink>
@@ -108,7 +108,7 @@
                       <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/">Home</NuxtLink>
                     </div>
                     <div class="border-b-2 border-gray-300 pb-2 px-2">
-                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/about-us">About Us</NuxtLink>
+                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/about">About Us</NuxtLink>
                     </div>
                     <div class="border-b-2 border-gray-300 pb-2 px-2">
                       <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/trainings">Trainings</NuxtLink>
