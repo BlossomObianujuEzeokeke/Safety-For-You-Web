@@ -180,9 +180,8 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       <div class="pt-16 pb-16 px-10 lg:px-16">
         
         <!--- Image carousel ----->
-        <div>
-
-        </div>
+        <Carousel />
+        <!-- <MobileCarousel /> -->
 
         <!--- Text Carousel-->
         <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-2xl bg-white shadow-none lg:shadow-lg py-8 px-0 lg:px-6">
@@ -220,6 +219,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </div>
             </div>
         </div>
+        
       </div>
 
       <div class=" bg-midGray py-10 space-y-8 px-8 md:px-16">
@@ -244,7 +244,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       </div>
 
       <!------- Our Services ----------->
-      <div class="pt-10 lg:pt-20 pb-24 space-y-8 px-4 md:px-16 bg-white">
+      <div class="pt-10 lg:pt-20 pb-24 lg:pb-40 space-y-8 px-4 md:px-16 bg-white">
 
           <!---- Div 1 ---->
           <div class="">
@@ -334,6 +334,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
           </div>
          
       </div>
+
     </div>
 
     <Footer />
