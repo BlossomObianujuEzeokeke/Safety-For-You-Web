@@ -1,11 +1,11 @@
 <template>
     <div v-if="mobile_showCarousel" id="mobile_carousel-container" class="relative overflow-hidden">
       <!-- Centered rounded container -->
-      <div class="rounded-full bg-white w-[273px] h-[264px] mx-auto flex items-center justify-center absolute top-14 left-20 overflow-hidden">
+      <div class="rounded-full bg-white w-[273px] h-[264px] mx-auto flex items-center justify-center absolute top-[20%] left-[20%] overflow-hidden">
         
         <!-- Carousel Images -->
         <div
-          class="mobile_carousel-images flex w-[calc(273px+1rem)] transition-transform duration-700 ease-in-out gap-x-4"
+          class="mobile_carousel-images flex w-full transition-transform duration-700 ease-in-out"
           :style="{ transform: `translateX(-${mobile_currentIndex * 100}%)` }"
         >
           <!-- First image -->
@@ -13,36 +13,29 @@
             <img src="../assets/images/carousel/carousel_1_resized.jpg" alt="Image 1"
               class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
           </div>
-  
-          <!-- Second image -->
-          <div class="relative sm:w-[200px] w-[273px] h-[264px] flex-shrink-0">
-            <img src="../assets/images/carousel/carousel_2_resized.jpg" alt="Image 2"
+          <div class="relative w-[273px] h-[264px] flex-shrink-0">
+            <img src="../assets/images/carousel/carousel_2_resized.jpg" alt="Image 1"
+              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
+          </div>
+          <div class="relative w-[273px] h-[264px] flex-shrink-0">
+            <img src="../assets/images/carousel/carousel_3_resized.jpg" alt="Image 1"
+              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
+          </div>
+          <div class="relative w-[273px] h-[264px] flex-shrink-0">
+            <img src="../assets/images/carousel/carousel_4_resized.jpg" alt="Image 1"
+              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
+          </div>
+          <div class="relative w-[273px] h-[264px] flex-shrink-0">
+            <img src="../assets/images/carousel/carousel_5_resized.jpg" alt="Image 1"
+              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
+          </div>
+          <div class="relative w-[273px] h-[264px] flex-shrink-0">
+            <img src="../assets/images/carousel/carousel_6_resized.jpg" alt="Image 1"
               class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
           </div>
   
-          <!-- Third image -->
-          <div class="relative aspect-square w-[273px] h-[264px] flex-shrink-0">
-            <img src="../assets/images/carousel/carousel_3_resized.jpg" alt="Image 3"
-              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
-          </div>
+          <!-- Additional images... -->
   
-          <!-- Fourth image -->
-          <div class="relative aspect-square w-[273px] h-[264px] flex-shrink-0">
-            <img src="../assets/images/carousel/carousel_4_resized.jpg" alt="Image 4"
-              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
-          </div>
-  
-          <!-- Fifth image -->
-          <div class="relative aspect-square w-[273px] h-[264px] flex-shrink-0">
-            <img src="../assets/images/carousel/carousel_5_resized.jpg" alt="Image 5"
-              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
-          </div>
-  
-          <!-- Sixth image -->
-          <div class="relative aspect-square w-[273px] h-[264px] flex-shrink-0">
-            <img src="../assets/images/carousel/carousel_6_resized.jpg" alt="Image 6"
-              class="w-full h-full rounded-full border-4 border-mainGreen object-cover" />
-          </div>
         </div>
       </div>
   
@@ -50,7 +43,7 @@
       <svg @click="mobile_prev" :disabled="mobile_isPrevDisabled" 
         :class="[
           mobile_isPrevDisabled ? 'border-lightGray' : 'border-mainGreen hover:bg-lightGreen', 
-          'hover:cursor-pointer absolute top-[37%] left-5 w-10 h-10  border-[3px] rounded-full bg-white'
+          'hover:cursor-pointer absolute inset-y-[50%] left-3 w-10 h-10 border-[3px] rounded-full bg-white'
         ]"
         viewBox="0 0 50 50"
         fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +56,7 @@
       <svg @click="mobile_next" :disabled="mobile_isNextDisabled" 
         :class="[
           mobile_isNextDisabled ? 'border-lightGray' : 'border-mainGreen hover:bg-lightGreen', 
-          'hover:cursor-pointer absolute top-[37%] right-3 w-10 h-10 md:w-10 md:h-10 sm:w-8 sm:h-8 border-[3px] rounded-full bg-white'
+          'hover:cursor-pointer absolute inset-y-[50%] right-3 w-10 h-10 border-[3px] rounded-full bg-white'
         ]"
         viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
       >
@@ -72,6 +65,7 @@
       </svg>
     </div>
   </template>
+  
   
   <script setup lang="ts">
   import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
