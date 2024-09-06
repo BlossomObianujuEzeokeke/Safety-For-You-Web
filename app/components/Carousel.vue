@@ -1,7 +1,7 @@
 <template>
   <div v-if="showCarousel" id="carousel-container" class="py-52 relative overflow-hidden">
 
-    <h3 class=" text-darkGreen italic font-bold text-xl absolute top-[15%] left-[30%]">Aid Workers Braving Risks for a Safer World</h3>
+    <h3 class=" hidden min-755:block text-darkGreen italic font-bold text-xl absolute top-[15%] left-[30%]">Aid Workers Braving Risks for a Safer World</h3>
     <!-- Carousel Images -->
     <div
       class="carousel-images flex"
@@ -117,7 +117,7 @@ function next() {
 
 // Function to hide the carousel if the screen width is <= 755px
 function checkWindowSize() {
-  showCarousel.value = window.innerWidth > 755;
+  showCarousel.value = window.innerWidth >= 755;
 }
 
 onMounted(() => {
