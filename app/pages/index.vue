@@ -124,22 +124,22 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         <h3 class="hidden text-center text-semiDarkGreen font-bold text-base italic py-3 md:block ">Trusted By Partners from around the World</h3>
         <div class="overflow-hidden" id="logo-slider">
           <div class="flex items-center space-x-12 animate-yoyo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-1.png" alt="American Safety and Health Institute logo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-2.png" alt="Medical World logo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-3.png" alt="Certified environmental management system logo">
-            <img class=" w-48 h-16" src="../assets/images/brand-logos/brand-logo-4.png" alt="OSH Academy logo">
-            <img class=" w-36 h-16" src="../assets/images/brand-logos/brand-logo-5.png" alt="Emergency Care and Safety Institute logo">
-            <img class=" w-20 h-20" src="../assets/images/brand-logos/brand-logo-6.png" alt="Resuscitation council of southern africa logo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-7.png" alt=" american heart association logo">
-            <img class=" w-24 h-16" src="../assets/images/brand-logos/brand-logo-8.png" alt=" royal college of nursing logo">
-            <img class=" w-24 h-16" src="../assets/images/brand-logos/brand-logo-9.png" alt="internations sos logo">
-            <img class=" w-24 h-16" src="../assets/images/brand-logos/brand-logo-10.png" alt="red cross logo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-11.png" alt="premiere urgence international logo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-12.png" alt="government of anambra state logo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-13.png" alt="leaders in maritime logo">
-            <img class=" w-24 h-20" src="../assets/images/brand-logos/brand-logo-14.png" alt="total logo">
-            <img class=" w-20 h-20" src="../assets/images/brand-logos/brand-logo-15.png" alt="iosh managing safely logo">
-            <img class=" w-20 h-20" src="../assets/images/brand-logos/brand-logo-16.png" alt="nebosh logo">
+            <img class="w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-1.png" alt="American Safety and Health Institute logo">
+            <img class=" w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-2.png" alt="Medical World logo">
+            <img class=" w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-3.png" alt="Certified environmental management system logo">
+            <img class=" w-44 h-12 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-4.png" alt="OSH Academy logo">
+            <img class=" w-36 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-5.png" alt="Emergency Care and Safety Institute logo">
+            <img class=" w-16 h-16 lg:w-20 lg:h-20" src="../assets/images/brand-logos/brand-logo-6.png" alt="Resuscitation council of southern africa logo">
+            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-7.png" alt=" american heart association logo">
+            <img class=" w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-8.png" alt=" royal college of nursing logo">
+            <img class=" w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-9.png" alt="internations sos logo">
+            <img class=" w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-10.png" alt="red cross logo">
+            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-11.png" alt="premiere urgence international logo">
+            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-12.png" alt="government of anambra state logo">
+            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-13.png" alt="leaders in maritime logo">
+            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-14.png" alt="total logo">
+            <img class=" w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-15.png" alt="iosh managing safely logo">
+            <img class=" w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-16.png" alt="nebosh logo">
           </div>
         </div>
 
