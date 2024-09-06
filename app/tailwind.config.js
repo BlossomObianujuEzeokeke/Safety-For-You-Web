@@ -10,6 +10,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'min-755': '755px', // Custom breakpoint at 755px
+      },
+      transitionDuration: {
+        '2000': '2000ms', // 2 seconds
+        '3000': '3000ms', // 3 seconds, adjust as needed
+      },
       colors: {
         darkGreen: '#005226',
         semiDarkGreen: '#007636',
