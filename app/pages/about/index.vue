@@ -298,6 +298,13 @@ console.log(items)
      url('../../assets/images/about-us-hero.jpg') lightgray center / cover no-repeat;
     
 }
+
+@media (max-width: 1008px) {
+    #right-hero {
+        background: linear-gradient(0deg, rgba(0, 118, 54, 0.60) 0%, rgba(0, 118, 54, 0.60) 100%), 
+        url('../../assets/images/about-us-hero.jpg') lightgray -71px -8.866px / 126.897% 103.114% no-repeat;
+    }
+}
     
 
 #leading-p {
@@ -324,10 +331,12 @@ console.log(items)
 }
 
 @media screen and (max-width: 480px) {
-            #right-hero {
-               /**background-size: 900px 100%;**/
-               background-size: cover;
-            }
+    #right-hero {
+        /**background-size: 900px 100%;**/
+        background-size: cover;
+    }
   }
+
+  
 
 </style>
