@@ -101,7 +101,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       </div>
 
       <!---- Hero Mobile ---->
-      <div class="px-2 lg:hidden">
+      <div class=" lg:hidden">
         <h1 class="capitalize font-bold text-[1.4rem] text-black leading-35px">safeguarding lives protecting environments empowering organizations</h1>
         
         
@@ -118,7 +118,6 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         </div>
         
       </div>
-
 
       <!----- Logo Slider ----->
       <div class="py-8">
@@ -145,7 +144,6 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         </div>
 
       </div>
-
 
       <!------ Safety For You Services -------->
       <div class="flex flex-col md:flex-row justify-around items-center px-4 md:px-0 md:pl-16 py-12 md:py-24 border-b border-semiDarkGreen">
@@ -177,11 +175,12 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       </div>
 
       <!--------- Carousels Section---------->
-      <div class="pt-16 pb-16 px-10 lg:px-16">
+      <div class="md:pt-16 md:pb-16 md:px-10 lg:px-16">
         
         <!--- Image carousel ----->
-        <Carousel />
-        <!-- <MobileCarousel /> -->
+        <Carousel></Carousel>
+
+        <Mobilecarousel></Mobilecarousel>
 
         <!--- Text Carousel-->
         <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-2xl bg-white shadow-none lg:shadow-lg py-8 px-0 lg:px-6">
@@ -189,7 +188,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
                 <img class=" w-full" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
             </div>
             <div class=" w-full lg:w-[80%] flex flex-col items-end justify-between pb-2 pt-4">
-              <p class="font-bold normal-case lg:italic text-black">
+              <p class="font-bold normal-case lg:italic text-black px-10 lg:px-0">
                 Safety For You Services Ltd recognizes humanitarian personnel and those who have died working for humanitarian causes.
                  We join the rest of the world on the 19th of August each year to mark the world humanitarian day.
               </p>
