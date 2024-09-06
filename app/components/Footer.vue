@@ -102,8 +102,8 @@
                                     </defs>
                                   </svg>
                                 <div class="space-y-4">
-                                    <p>+1 526 654 8965</p>
-                                    <p>+1 526 654 8965</p>
+                                    <p>+234(0)8164339861</p>
+                                    <p>+234(0)8064885752</p>
                                 </div>
                             </span>
                             <div class="flex space-x-4 mt-2 text-sm font-medium">
