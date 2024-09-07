@@ -105,20 +105,20 @@
               >
                   <nav class=" flex flex-col space-y-8 pt-20 pb-24 px-16">
                     <div class="border-b-2 border-gray-300 pb-2 px-2">
-                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/">Home</NuxtLink>
+                      <NuxtLink class="text-[17.103px] text-darkGreen font-semibold hover:text-gray-300 " to="/">Home</NuxtLink>
                     </div>
                     <div class="border-b-2 border-gray-300 pb-2 px-2">
-                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/about">About Us</NuxtLink>
+                      <NuxtLink class="text-[17.103px] text-darkGreen font-semibold hover:text-gray-300 " to="/about">About Us</NuxtLink>
                     </div>
                     <div class="border-b-2 border-gray-300 pb-2 px-2">
-                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/trainings">Trainings</NuxtLink>
+                      <NuxtLink class="text-[17.103px] text-darkGreen font-semibold hover:text-gray-300 " to="/trainings">Trainings</NuxtLink>
                     </div>
                     <div class="border-b-2 border-gray-300 pb-2 px-2">
-                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/privacy-policy">Privacy Policy</NuxtLink>
+                      <NuxtLink class="text-[17.103px] text-darkGreen font-semibold hover:text-gray-300 " to="/privacy-policy">Privacy Policy</NuxtLink>
                     </div>
 
                     <div class="border-b-2 border-gray-300 pb-2 px-2">
-                      <NuxtLink class="text-lg text-darkGreen font-semibold hover:text-gray-300 " to="/trainers-profile">Trainers Profile</NuxtLink>
+                      <NuxtLink class="text-[17.103px] text-darkGreen font-semibold hover:text-gray-300 " to="/trainers-profile">Trainers Profile</NuxtLink>
                     </div>
                   </nav>
               </div>
