@@ -14,8 +14,7 @@ export default defineType({
     defineField({
       name: 'profileSummary',
       title: 'Profile Summary',
-      type: 'text',
-      rows: 4,
+      type: 'blockContent',
       validation: Rule => Rule.required(),
     }),
     defineField({
