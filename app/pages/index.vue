@@ -279,9 +279,9 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
             <div class=" py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:space-x-3 space-y-4 lg:space-y-0">
               
               <!--- Card 1 --->
-              <div class=" text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4   md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+              <div class=" text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4 md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
                 <h4 class=" font-bold md:font-semibold text-base md:text-lg py-4 capitalize">comprehensive training programs</h4>
-                <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
+                <ul class="list-disc font-medium md:text-[15.6px] leading-[30px] text-darkGray pl-3">
                   <li>Journey Management/Safe Driving: Enhance travel safety.</li>
                   <li>Water, Sanitation, and hygiene (WASH): Maintain health in camps.</li>
                   <li>Camp Coordination and Management: Streamline operations in camps.</li>
@@ -293,10 +293,10 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </div>
           
               <!--- Card 2 --->
-              <div class="text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+              <div class="text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4 md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
                 <h4 class="font-bold md:font-semibold text-base md:text-lg py-4 capitalize">expert consultancy services</h4>
                 <p class="font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray">We offer consultancy services to help organizations develop procedures aligned with international best practices:</p>
-                <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
+                <ul class="list-disc font-medium md:text-[15.6px] leading-[30px] text-darkGray pl-3">
                   <li>Journey Management Procedures.</li>
                   <li>Site Contingency/Emergency</li>
                   <li>Water, Sanitation, and Hygiene Guidelines/Procedures and Audits.</li>
@@ -305,9 +305,9 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </div>
           
               <!--- Card 3 --->
-              <div class="text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+              <div class="text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver rounded-3xl pl-6 pr-6 pt-8 pb-4 md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
                 <h4 class="font-bold md:font-semibold text-base md:text-lg py-4 capitalize">additional services</h4>
-                <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
+                <ul class="list-disc font-medium md:text-[15.6px] leading-[30px] text-darkGray pl-3">
                   <li>Audit/Inspection of Internally Displaced Camps: Ensure compliance with legislations.</li>
                   <li>Induction of Aid Workers Prior to Mobilization: Pre-deployment training for safety.</li>
                   <li>Development of Site-Specific Emergency</li>

@@ -25,12 +25,6 @@
                 </div>
             </div>
         </div>
-     
-        
-        
-        
-        
-        
         <Footer />
     </section>
 </template>
@@ -42,7 +36,7 @@
 <style scoped>
 
 #trainers-landing-page {
-    background-image: url('../assets/images/trainers-page-spiral.png');
+    background-image: url('../../assets/images/trainers-page-spiral.png');
     background-repeat: no-repeat;
     background-size: 150px;
     background-position: right 10%;
