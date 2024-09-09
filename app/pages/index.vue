@@ -273,7 +273,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
             </div>
           </div>
 
-          <!----- Div 2 ------>
+          <!----- Div 2 ---->
           <div class="pb-8">
             <h3 class="uppercase font-extrabold text-3xl md:text-4xl lg:text-6xl text-darkGray/30 text-center py-4 md:py-12 lg:py-4">our services</h3>
             <div class=" py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:space-x-3 space-y-4 lg:space-y-0">
@@ -451,7 +451,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 
 @media (max-width: 1024px) {
   .text-box {
-    height: 500px;
+    height: 650px;
   }
   
 }
