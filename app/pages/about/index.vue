@@ -14,7 +14,7 @@
 
                         <div class="relative w-28 sm:w-32 md:w-36">
                             <!-- <img class="w-full h-full relative z-10 rounded-full" src="../assets/images/S4U.png" alt="Safety For You Logo"> -->
-                            <img class="w-full h-full relative z-10 rounded-full" src="../../assets/images/safety_for_you_logo.png" alt="Safety For You Logo">
+                            <img class="  w-full h-full relative z-10 rounded-full object-cover" src="../../assets/images/safety_for_you_logo.png" alt="Safety For You Logo">
                             <div class="absolute inset-0 w-full h-full rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.5)] to-[rgba(0,82,38,0.5)] z-20"></div>
                         </div>
                         
@@ -333,7 +333,7 @@ console.log(items)
 @media screen and (max-width: 480px) {
     #right-hero {
         /**background-size: 900px 100%;**/
-        background-size: cover;
+        /**background-size: cover;**/
     }
   }
 
