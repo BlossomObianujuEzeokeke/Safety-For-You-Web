@@ -4,7 +4,7 @@
           <div class="flex items-center justify-between bg-darkGreen text-white px-6 py-3">
             <!-- Logo and Mobile Menu Hamburger -->
             <div class="flex items-center justify-between gap-6">
-                <img class=" h-12" src="../assets/images/S4U.png" alt="Safety For You Logo">
+                <NuxtLink id="logo" to="/" active-class="" exact ><img  class=" h-12" src="../assets/images/S4U.png" alt="Safety For You Logo"></NuxtLink>
                 <div class=" hidden lg:block flex-col">
                     <p class=" font-semibold capitalize">Safety For You services LTD</p>
                     <span class=" text-xs text-lightGray font-semibold">We specialize in health, safety, medical and security trainings</span>
@@ -100,7 +100,7 @@
               </div>
         
               <!-- Slide-over Menu -->
-              <div :class="['transition-all','duration-700','ease-out','absolute','right-0', ' top-[72px]' ,'bg-white',' w-72',' h-[28rem]', menuState ? '' : 'translate-x-full']"
+              <div :class="['transition-all','duration-700','ease-out','absolute','right-0', ' top-[83px]' ,'bg-white',' w-72',' h-[28rem]', menuState ? '' : 'translate-x-full']"
                     class="  rounded-bl-lg"
               >
                   <nav class=" flex flex-col space-y-8 pt-20 pb-24 px-16">
@@ -193,6 +193,23 @@ onBeforeUnmount(() => {
 
 
 <style scoped>
+
+#logo {
+  text-decoration: none;
+
+}
+
+#logo {
+  text-decoration: none;
+  border-radius: none;
+  color: white;
+  background: none;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 6px 2px 6px 2px;
+  min-width: 170px;
+}
 
 a {
     text-decoration: none;

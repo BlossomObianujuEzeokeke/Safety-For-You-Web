@@ -8,7 +8,6 @@ const { data: posts } = await useSanityQuery<Post[]>(query)
 
 useHead({ title: 'Home | Safety For You Services Ltd' })
 
-
 const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 </script>
 
@@ -79,7 +78,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
                 <h1 class="capitalize text-[42px] font-semibold leading-[1.40]">safeguarding lives protecting environments empowering organizations</h1>
                 <p class="capitalize text-darkGray">learn more about our HSE privacy policy statement</p>
 
-                <button class="bg-semiDarkGreen text-white font-bold outline-none hover:bg-darkGreen transition-colors duration-300 px-8 py-2 rounded-md w-1/2">GET STARTED</button>
+                <NuxtLink to="/trainings" class=" block text-center bg-semiDarkGreen text-white font-bold outline-none hover:bg-darkGreen transition-colors duration-300 px-8 py-2 rounded-md w-1/2">GET STARTED</NuxtLink>
               </div>
           </div>
             
@@ -101,8 +100,8 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       </div>
 
       <!---- Hero Mobile ---->
-      <div class=" lg:hidden">
-        <h1 class="capitalize font-bold text-[1.4rem] text-black leading-35px">safeguarding lives protecting environments empowering organizations</h1>
+      <div class=" lg:hidden pl-3 pr-2">
+        <h1 class="capitalize font-semibold text-[1.4rem]  text-black leading-35px">safeguarding lives protecting environments empowering organizations</h1>
         
         
         <div >
@@ -146,10 +145,10 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       </div>
 
       <!------ Safety For You Services -------->
-      <div class="flex flex-col md:flex-row justify-around items-center px-4 md:px-0 md:pl-16 py-12 md:py-24 border-b border-semiDarkGreen">
+      <div class="flex flex-col md:flex-row justify-around items-center px-4 md:px-16 py-4 md:py-24 border-none lg:border-b border-darkGray/15">
         <!-- Text Section -->
-        <div class="w-full md:w-[55%] mb-8 md:mb-0">
-          <h3 class=" uppercase text-xl text-center md:text-start md:text-3xl font-bold text-darkGreen pb-4 md:pb-5">Safety For You Services LTD</h3>
+        <div class="w-full lg:w-[55%] mb-8 md:mb-0">
+          <h3 class=" uppercase text-lg text-center md:text-start md:text-3xl font-bold text-darkGreen pb-4 md:pb-5">Safety For You Services LTD</h3>
           <p class="text-darkGray text-[15px] md:text-[17px] font-medium leading-[30px]">
             Welcome to Safety For You Services Ltd. We understand that interactions between workers and equipment impact health, safety, and the environment.
             Without proper management, these interactions can harm people, assets, and the environment.
@@ -188,7 +187,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
                 <img class=" w-full" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
             </div>
             <div class=" w-full lg:w-[80%] flex flex-col items-end justify-between pb-2 pt-4">
-              <p class="font-bold normal-case lg:italic text-black px-8 lg:px-0">
+              <p class="font-semibold text-base normal-case lg:italic text-black px-4 lg:px-0">
                 Safety For You Services Ltd recognizes humanitarian personnel and those who have died working for humanitarian causes.
                  We join the rest of the world on the 19th of August each year to mark the world humanitarian day.
               </p>
@@ -275,13 +274,13 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
           </div>
 
           <!----- Div 2 ------>
-          <div class="mb-8">
+          <div class="pb-8">
             <h3 class="uppercase font-extrabold text-3xl md:text-4xl lg:text-6xl text-darkGray/30 text-center py-4 md:py-12 lg:py-4">our services</h3>
             <div class=" py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:space-x-3 space-y-4 lg:space-y-0">
               
               <!--- Card 1 --->
-              <div class=" shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
-                <h4 class="font-semibold text-base md:text-lg py-4 capitalize">comprehensive training programs</h4>
+              <div class=" text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4   md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+                <h4 class=" font-bold md:font-semibold text-base md:text-lg py-4 capitalize">comprehensive training programs</h4>
                 <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
                   <li>Journey Management/Safe Driving: Enhance travel safety.</li>
                   <li>Water, Sanitation, and hygiene (WASH): Maintain health in camps.</li>
@@ -294,8 +293,8 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </div>
           
               <!--- Card 2 --->
-              <div class="shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
-                <h4 class="font-semibold text-base md:text-lg py-4 capitalize">expert consultancy services</h4>
+              <div class="text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver hover:bg-white rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+                <h4 class="font-bold md:font-semibold text-base md:text-lg py-4 capitalize">expert consultancy services</h4>
                 <p class="font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray">We offer consultancy services to help organizations develop procedures aligned with international best practices:</p>
                 <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
                   <li>Journey Management Procedures.</li>
@@ -306,8 +305,8 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </div>
           
               <!--- Card 3 --->
-              <div class="shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
-                <h4 class="font-semibold text-base md:text-lg py-4 capitalize">additional services</h4>
+              <div class="text-box shadow-xl leading-[30px] border-4 border-mainGreen lg:border-lightGrayBorder md:border-4 md:border-transparent bg-silver rounded-3xl pl-6 pr-6 pt-8 pb-4  md:hover:border-mainGreen md:hover:border-4 transition-all duration-500 box-border">
+                <h4 class="font-bold md:font-semibold text-base md:text-lg py-4 capitalize">additional services</h4>
                 <ul class="list-disc font-medium text-sm md:text-[15.6px] leading-[30px] text-darkGray pl-3">
                   <li>Audit/Inspection of Internally Displaced Camps: Ensure compliance with legislations.</li>
                   <li>Induction of Aid Workers Prior to Mobilization: Pre-deployment training for safety.</li>
@@ -322,7 +321,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
           </div>
           
           <!---- Div 3 ----->
-          <div class="">
+          <div class="pt-16">
             <div id="construction_workers_section" class="flex items-center justify-center">
               <img src="../assets/images/construction_workers.png" alt="Construction Worksers">
             </div>
@@ -446,18 +445,22 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
   width: calc(200% + 2rem);
 }
 
-
-
 #right-spiral {
   fill: var(--Main-Green, #4CAF4F);
 }
 
+@media (max-width: 1024px) {
+  .text-box {
+    height: 500px;
+  }
+  
+}
 
 #construction_workers_section {
   background-image: url('../assets/images/construction_workers_left_spiral._bg.svg'), url('../assets/images/construction_workers_right_spiral_bg.svg');
   background-repeat: no-repeat;
   background-position: calc(50% - 280px) 58%, calc(50% + 280px) 58%;
-  height: 500px;
+  height: 510px;
   background-size: 720px;
 }
 
