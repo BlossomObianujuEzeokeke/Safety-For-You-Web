@@ -4,11 +4,11 @@
 
         <!--- Body ---->
         <div class="pt-16 md:pt-16 lg:pt-28 px-4 md:px-8 lg:px-16 pb-24 lg:pb-48 bg-lightGrayBg" id="privacy-policy">
-            <h1 class="uppercase font-bold text-3xl md:text-4xl lg:text-6xl text-darkGray/15 text-center py-4 md:py-6 lg:py-8">
+            <h1 class="uppercase font-bold text-4xl md:text-4xl lg:text-6xl text-darkGray/15 text-center py-8 md:py-6 lg:py-8">
                 privacy policy
             </h1>
             <div class="shadow-md border border-darkGray/30 lg:border-veryLightGreen rounded-xl px-4 md:px-8 lg:px-12 pt-10 md:pt-12 lg:pt-14 pb-14 md:pb-20 lg:pb-28 bg-white">
-                <h3 class="uppercase font-bold text-2xl px-12 md:px-0 pt-4 pb-6 md:text-lg lg:text-xl text-darkGreen text-center">
+                <h3 class="uppercase font-bold text-2xl px-10 md:px-0 pt-4 pb-6 md:text-lg lg:text-xl text-darkGreen text-center">
                     hse privacy policy statement
                 </h3>
         
@@ -59,7 +59,7 @@
     background-image: url('../assets/images/privacy-policy-left-spirall.png'), url('../assets/images/privacy-policcy-right-spiral.png');
     background-repeat: no-repeat;
     background-size: 300px;
-    background-position: left 5%, right 4%;
+    background-position: left 4%, right 4%;
 }
 
 /* For large screens */
