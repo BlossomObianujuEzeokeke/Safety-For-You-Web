@@ -1,7 +1,7 @@
 <template>
     <div v-if="mobile_showCarousel" id="mobile_carousel-container" class="relative overflow-hidden">
       <!-- Centered rounded container -->
-      <div class="rounded-full bg-white w-[273px] h-[264px] mx-auto flex items-center justify-center absolute top-[20%] left-[15%] overflow-hidden">
+      <div class="rounded-full bg-white w-[273px] h-[264px] mx-auto flex items-center justify-center absolute top-[12%] left-[15%] overflow-hidden">
         
         <!-- Carousel Images -->
         <div
