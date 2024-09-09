@@ -14,6 +14,10 @@ import princeWillPage from './trainersPages/princeWillPage'
 // Trainings Pages
 
 // Team Members Pages
+import alexObioraTeamPage from './teamPages/alexObioraTeamPage'
+import kamsyMaduekeTeamPage from './teamPages/kamsyMaduekeTeamPage'
+import princewillTeamPage from './teamPages/princewillTeamPage'
+import irfanTeamPage from './teamPages/irfanTeamPage'
 
 
 // Schema
@@ -28,6 +32,11 @@ export const schemaTypes = [
     kamsyMadueke,
     nwaobiAnthonyPage,
     princeWillPage,
-    nnodiReginaldPage
+    nnodiReginaldPage,
+
+    alexObioraTeamPage,
+    kamsyMaduekeTeamPage,
+    princewillTeamPage,
+    irfanTeamPage
 
 ]
