@@ -109,5 +109,10 @@
 </script>
 
 <style scoped>
-
+     
+ .team-card {
+    background-image: url('../../assets/images/team-card-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 </style>
