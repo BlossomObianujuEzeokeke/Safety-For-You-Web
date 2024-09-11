@@ -35,7 +35,7 @@ const referees = defineField({
 });
 
 export default defineType({
-  name: 'nnodiReginaldPage',
+  name: 'nnodiReginaldTrainerPage',
   title: "Nnodi Reginald Trainer's Page",
   type: 'document',
   fields: [
@@ -58,8 +58,7 @@ export default defineType({
     defineField({
       name: 'profileSummary',
       title: 'Profile Summary',
-      type: 'array',
-      of: [{ type: 'string' }],
+      type: 'blockContent',
     }),
     defineField({
       name: 'education',

@@ -1,7 +1,7 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'princewillEkejiPage',
+  name: 'princewillEkejiTrainerPage',
   title: "Princewill Ekeji Trainer's Page",
   type: 'document',
   fields: [
@@ -12,8 +12,8 @@ export default defineType({
       validation: Rule => Rule.required(),
     }),
     defineField({
-      name: 'professionalProfile',
-      title: 'Professional Profile',
+      name: 'profileSummary',
+      title: 'Profile Summary',
       type: 'blockContent',
     }),
     defineField({

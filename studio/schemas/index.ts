@@ -5,11 +5,11 @@ import trainersProfile from './trainersProfile'
 import training from './training'
 
 // Trainers Profiles Pages
-import alexObiora from './trainersPages/alexObioraPage'
-import kamsyMadueke from './trainersPages/kamsyMadueke'
-import nwaobiAnthonyPage from './trainersPages/nwaobiAnthonyPage'
-import nnodiReginaldPage from './trainersPages/nnodiReginaldPage'
-import princeWillPage from './trainersPages/princeWillPage'
+import alexObioraTrainerPage from './trainersPages/alexObioraPage'
+import kamsyMaduekeTrainerPage from './trainersPages/kamsyMaduekePage'
+import nwaobiAnthonyTrainerPage from './trainersPages/nwaobiAnthonyPage'
+import nnodiReginaldTrainerPage from './trainersPages/nnodiReginaldPage'
+import princeWillTrainerPage from './trainersPages/princeWillPage'
 
 // Trainings Pages
 import journeyManagementTraining from './traningsPages/journey-management-training'
@@ -37,11 +37,11 @@ export const schemaTypes = [
     trainersProfile, 
     training,
 
-    alexObiora,
-    kamsyMadueke,
-    nwaobiAnthonyPage,
-    princeWillPage,
-    nnodiReginaldPage,
+    alexObioraTrainerPage,
+    kamsyMaduekeTrainerPage,
+    nwaobiAnthonyTrainerPage,
+    princeWillTrainerPage,
+    nnodiReginaldTrainerPage,
 
     alexObioraTeamPage,
     kamsyMaduekeTeamPage,
