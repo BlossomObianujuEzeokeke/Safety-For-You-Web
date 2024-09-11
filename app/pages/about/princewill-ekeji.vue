@@ -17,13 +17,11 @@
             </div> -->
             <!-- Left Column: Image -->
             <div class="team-card flex justify-center md:w-1/3 w-full lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px]  overflow-hidden border-mainGreen flex-col">
-
                 <!-- Image Section -->
                 <div class="flex-grow overflow-hidden">
-                <img class="object-cover w-full h-full " :src="$urlFor(item[0].image).width(1920).url()"  :alt="item[0].name">
+                     <img class="object-cover w-full h-full " :src="$urlFor(item[0].image).width(1920).url()"  :alt="item[0].name">
                 </div>
-        
-              </div>
+            </div>
         
             <!-- Right Column: Content -->
             <div class="md:w-2/3 w-full">
@@ -97,7 +95,7 @@
 </template>
 
 <script setup lang="ts">
-         import { type Post } from '~/types/Post'
+    import { type Post } from '~/types/Post'
      import { PortableText } from '@portabletext/vue'
  
      // const route = useRoute()

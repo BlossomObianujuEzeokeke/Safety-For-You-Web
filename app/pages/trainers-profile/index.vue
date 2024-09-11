@@ -9,19 +9,68 @@
                     Profile of Key Personnel Trainers
                 </h1>
             
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <NuxtLink to="" class="px-4 py-6 mb-[14px] shadow-lg rounded-2xl border hover:cursor-pointer border-green-300 bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">Alex Obiora</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                    <!-- Card 1 -->
+                    <NuxtLink :to="`/trainers-profile/${trainersData[1].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[1].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-black">Profile Summary:</p>
                             <p class="font-medium text-darkGray leading-8">
-                                Alex Obiora is the Managing Consultant and Head of Occupational Health and Safety Training with over 17 years of experience. 
-                                He has provided consultancy services to multinational oil and gas companies and humanitarian aid organizations.....
+                                <PortableText :value="trainersData[1].profileSummary" />
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
-                            
                         </div>
                     </NuxtLink>
+
+                    <!--Card 2 -->
+                    <NuxtLink :to="`/trainers-profile/${trainersData[0].slug.current}`"  class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[0].name }}</h3>
+                        <div class="pt-4">
+                            <p class="font-bold text-black">Profile Summary:</p>
+                            <p class="font-medium text-darkGray leading-8">
+                                <PortableText :value="trainersData[0].profileSummary" />
+                                <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
+                            </p>
+                        </div>
+                    </NuxtLink>
+
+                    <!-- Card 3 -->
+                    <NuxtLink :to="`/trainers-profile/${trainersData[4].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[4].name }}</h3>
+                        <div class="pt-4">
+                            <p class="font-bold text-black">Profile Summary:</p>
+                            <p class="font-medium text-darkGray leading-8">
+                                <PortableText :value="trainersData[4].profileSummary" />
+                                <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
+                            </p>
+                        </div>
+                    </NuxtLink>
+
+                    <!-- Card 4 -->
+                    <NuxtLink :to="`/trainers-profile/${trainersData[2].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[2].name }}</h3>
+                        <div class="pt-4">
+                            <p class="font-bold text-black">Profile Summary:</p>
+                            <p class="font-medium text-darkGray leading-8">
+                                {{ truncatedProfileSummary }}
+                                <span class="text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
+                              </p>
+                        </div>
+                    </NuxtLink>
+
+                    <!-- Card 5 -->
+                    <NuxtLink :to="`/trainers-profile/${trainersData[3].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[3].name }}</h3>
+                        <div class="pt-4">
+                            <p class="font-bold text-black">Profile Summary:</p>
+                            <p class="font-medium text-darkGray leading-8">
+                                <PortableText :value="trainersData[3].profileSummary" />
+                                <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
+                            </p>
+                        </div>
+                    </NuxtLink>
+
                 </div>
             </div>
         </div>
@@ -30,6 +79,51 @@
 </template>
 
 <script setup lang="ts">
+
+import {ref, computed} from 'vue'
+import { PortableText } from '@portabletext/vue'
+
+const queryTrainers = groq`*[_type in 
+        [
+            "alexObioraTrainerPage", 
+            "kamsyMaduekeTrainerPage",  
+            "nwaobiAnthonyTrainerPage", 
+            "princewillEkejiTrainerPage", 
+            "nnodiReginaldTrainerPage", 
+        ]
+    ]
+    { name, slug, profileSummary}
+    `
+  const { data: trainers} = await useSanityQuery(queryTrainers) 
+
+  // If it's a ref, access its value directly
+const trainersData = ref(trainers.value);
+
+// Find Kamsy Madueke's data (replace 'kamsy-madueke' with the actual slug if needed)
+const trainer = computed(() => {
+  return trainersData.value.find(t => t.slug.current === 'kamsy-madueke');
+});
+
+
+
+// Truncate function for block content (profileSummary)
+const truncateText = (text: string, length: number): string => {
+  return text.length > length ? text.slice(0, length) + '...' : text;
+};
+
+// Truncate the profileSummary for Kamsy Madueke
+const truncatedProfileSummary = computed(() => {
+  if (trainer.value?.profileSummary[0]?.children[0]?.text) {
+    const fullText = trainer.value.profileSummary[0].children[0].text;
+    console.log(fullText.length)
+    return truncateText(fullText, 250); // Truncate to 100 characters
+  } else {
+    return '';
+  }
+  
+});
+
+console.log(trainersData)
   
 </script>
 

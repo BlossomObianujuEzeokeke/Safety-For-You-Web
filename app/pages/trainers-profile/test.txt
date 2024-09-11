@@ -1,0 +1,83 @@
+<template>
+  <section class="container mx-auto py-12">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">
+      PROFILE OF KEY PERSONNEL TRAINERS
+    </h1>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <nuxt-link to="/profile/alex-obiora" class="block">
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300">
+          <h2 class="text-green-600 text-xl font-semibold">ALEX OBIORA</h2>
+          <p class="mt-4 text-gray-700">
+            <strong>Profile Summary:</strong> Alex Obiora is the Managing Consultant and Head of Occupational Health and Safety Training with over 17 years of experience. He has provided consultancy services to multinational oil and gas companies and humanitarian aid organizations...
+          </p>
+          <span class="text-green-600 mt-2 inline-block">See More</span>
+        </div>
+      </nuxt-link>
+
+      <!-- Card 2 -->
+      <nuxt-link to="/profile/nwaobi-anthony" class="block">
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300">
+          <h2 class="text-green-600 text-xl font-semibold">NWAOBI ANTHONY</h2>
+          <p class="mt-4 text-gray-700">
+            <strong>Profile Summary:</strong> Nwaobi Anthony holds a BSc in Nursing and an MSc in Nursing (Med Surg Faculty). With extensive experience in multinational oil and gas companies as a Site Medic and with humanitarian organizations like Médecins Sans Frontières...
+          </p>
+          <span class="text-green-600 mt-2 inline-block">See More</span>
+        </div>
+      </nuxt-link>
+
+      <!-- Card 3 -->
+      <nuxt-link to="/profile/princewill-ekeji" class="block">
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300">
+          <h2 class="text-green-600 text-xl font-semibold">PRINCEWILL EKEJI</h2>
+          <p class="mt-4 text-gray-700">
+            <strong>Profile Summary:</strong> Princewill Ekeji boasts over 14 years of expertise in Health, Safety, and Environment (HSE) management across sectors such as Oil & Gas, Construction, Production, Drilling, Hospitality, Food, and Humanitarian Aid...
+          </p>
+          <span class="text-green-600 mt-2 inline-block">See More</span>
+        </div>
+      </nuxt-link>
+
+      <!-- Card 4 -->
+      <nuxt-link to="/profile/kamsy-madueke" class="block">
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300">
+          <h2 class="text-green-600 text-xl font-semibold">KAMSY MADUEKE</h2>
+          <p class="mt-4 text-gray-700">
+            <strong>Profile Summary:</strong> Kamsy Madueke is a highly motivated Learning and Development Specialist. As a graduate of Medicine, her professional experience and cutting-edge skills in both medical and paramedical aspects of training programs cannot be overemphasized...
+          </p>
+          <span class="text-green-600 mt-2 inline-block">See More</span>
+        </div>
+      </nuxt-link>
+
+      <!-- Card 5 -->
+      <nuxt-link to="/profile/reginald-nnodi" class="block">
+        <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition duration-300">
+          <h2 class="text-green-600 text-xl font-semibold">LT. COL. NNODI REGINALD (RETIRED)</h2>
+          <p class="mt-4 text-gray-700">
+            <strong>Profile Summary:</strong>
+            <ul class="list-disc pl-5">
+              <li>Name: Reginald Onyewuchi Nnodi</li>
+              <li>Date of Birth: 4th October 1965</li>
+              <li>Title: Lieutenant Colonel (Retired)</li>
+              <li>State of Origin: Imo State</li>
+              <li>Religion: Christianity</li>
+              <li>Contact Address: No 87, Victory Way, Satellite Town, Calabar...</li>
+            </ul>
+          </p>
+          <span class="text-green-600 mt-2 inline-block">See More</span>
+        </div>
+      </nuxt-link>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "ProfileTrainers"
+};
+</script>
+
+<style scoped>
+/* Add any custom styles if needed */
+</style>
