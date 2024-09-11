@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'campCoordinationandManagementTraining',
-  title: 'Camp Coordination and Management Training',
+  name: 'emergencyResponseTraining',
+  title: 'Emergency Response Training',
   type: 'document',
   fields: [
     defineField({
@@ -10,6 +10,11 @@ export default defineType({
       title: 'Title',
       type: 'string',
       validation: Rule => Rule.required(),
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'blockContent',
     }),
     defineField({
         name: 'slug',
@@ -20,6 +25,16 @@ export default defineType({
           source: 'title',
           maxLength: 96,
         },
+    }),
+    defineField({
+        name: 'practicalBenefits',
+        title: 'Practical benefits',
+        type: 'blockContent',
+    }),
+    defineField({
+        name: 'trainingObjectives',
+        title: 'Training Objectives',
+        type: 'blockContent',
     }),
   ],
 })

@@ -59,7 +59,7 @@ const certifications = {
 
 export default defineType({
   name: 'nwaobiAnthonyPage',
-  title: 'Nwaobi Anthony Page',
+  title: "Nwaobi Anthony Trainer's Page",
   type: 'document',
   fields: [
     defineField({

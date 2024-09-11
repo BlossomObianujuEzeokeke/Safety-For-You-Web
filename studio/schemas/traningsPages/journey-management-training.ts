@@ -1,20 +1,26 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'princewillEkejiPage',
-  title: "Princewill Ekeji Trainer's Page",
+  name: 'journeyManagementTraining',
+  title: 'Journey Management Training',
   type: 'document',
   fields: [
     defineField({
-      name: 'name',
-      title: 'Name',
+      name: 'title',
+      title: 'Title',
       type: 'string',
       validation: Rule => Rule.required(),
     }),
     defineField({
-      name: 'professionalProfile',
-      title: 'Professional Profile',
+      name: 'description',
+      title: 'Description',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'benefits',
+      title: 'Benefits',
+      type: 'array',
+      of: [{type: 'string'}]
     }),
     defineField({
       name: 'slug',
@@ -22,37 +28,30 @@ export default defineType({
       type: 'slug',
       validation: (Rule) => Rule.required(),
       options: {
-        source: 'name',
+        source: 'title',
         maxLength: 96,
       },
     }),
     defineField({
-      name: 'keyAchievements',
-      title: 'Key Achievements',
+        name: 'safeDrivingCourse',
+        title: 'Safe Driving Course',
+        type: 'blockContent',
+      }),
+    defineField({
+      name: 'programComponent',
+      title: 'Program Component',
       type: 'array',
       of: [{ type: 'string' }],
     }),
     defineField({
-      name: 'careersMilestones',
-      title: 'Career Milestone',
+      name: 'courseObjectives',
+      title: 'Course Objectives',
       type: 'array',
       of: [{ type: 'string' }],
     }),
     defineField({
-      name: 'hseLeadership',
-      title: 'HSE Leadership',
-      type: 'array',
-      of: [{ type: 'string' }],
-    }),
-    defineField({
-      name: 'educationalBackground',
-      title: 'Educational Background',
-      type: 'array',
-      of: [{ type: 'string' }],
-    }),
-    defineField({
-      name: 'currentRole',
-      title: 'Current Role',
+      name: 'keyBenefits',
+      title: 'Key Benefits',
       type: 'array',
       of: [{ type: 'string' }],
     }),
