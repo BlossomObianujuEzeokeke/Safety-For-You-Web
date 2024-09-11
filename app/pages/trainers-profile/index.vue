@@ -5,14 +5,14 @@
         <!--- Body ---->
         <div class="pt-16 md:pt-16 lg:pt-28 ">
             <div class="px-4 md:px-8 lg:px-16 py-8 pb-24 lg:pb-48 bg-lightGrayBg" id="trainers-landing-page">
-                <h1 class="uppercase font-bold sm:text-base md:text-[28px]  text-black text-center py-4 md:py-6 lg:py-8">
+                <h1 class="uppercase font-bold sm:text-base md:text-[28px]  text-black text-center py-4 md:py-12">
                     Profile of Key Personnel Trainers
                 </h1>
             
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                     <!-- Card 1 -->
-                    <NuxtLink :to="`/trainers-profile/${trainersData[1].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                    <NuxtLink :to="`/trainers-profile/${trainersData[1].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
                         <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[1].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-black">Profile Summary:</p>
@@ -24,7 +24,7 @@
                     </NuxtLink>
 
                     <!--Card 2 -->
-                    <NuxtLink :to="`/trainers-profile/${trainersData[0].slug.current}`"  class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                    <NuxtLink :to="`/trainers-profile/${trainersData[0].slug.current}`"  class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
                         <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[0].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-black">Profile Summary:</p>
@@ -36,7 +36,7 @@
                     </NuxtLink>
 
                     <!-- Card 3 -->
-                    <NuxtLink :to="`/trainers-profile/${trainersData[4].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                    <NuxtLink :to="`/trainers-profile/${trainersData[4].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
                         <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[4].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-black">Profile Summary:</p>
@@ -48,7 +48,7 @@
                     </NuxtLink>
 
                     <!-- Card 4 -->
-                    <NuxtLink :to="`/trainers-profile/${trainersData[2].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                    <NuxtLink :to="`/trainers-profile/${trainersData[2].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
                         <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[2].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-black">Profile Summary:</p>
@@ -60,7 +60,7 @@
                     </NuxtLink>
 
                     <!-- Card 5 -->
-                    <NuxtLink :to="`/trainers-profile/${trainersData[3].slug.current}`" class="px-4 py-6 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                    <NuxtLink :to="`/trainers-profile/${trainersData[3].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
                         <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[3].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-black">Profile Summary:</p>
