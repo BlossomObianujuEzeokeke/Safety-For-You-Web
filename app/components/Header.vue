@@ -73,13 +73,15 @@
                     leave-from-class="opacity-100 transform translate-y-0"
                     leave-to-class="opacity-0 transform -translate-y-4"
                   >
-                    <div v-if="showDropDown" class="absolute bg-[#006f32] top-8 w-64 rounded-b-xl shadow-lg">
+                    <div v-if="showDropDown" class="absolute bg-[#006f32] top-8 w-72 rounded-b-xl shadow-lg">
                         <ul class=" flex flex-col space-y-4 px-3 py-5 text-sm">
-                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/journery">Journery management training</NuxtLink>
-                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/hygiene">Hygiene & Sanitation training</NuxtLink>
-                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/emergency">Emergency Response training</NuxtLink>
-                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" to="/gender">Gender based violence training</NuxtLink>
-                          <NuxtLink class="" to="">Security training</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[4].slug.current}`" >{{ truncateText(trainingsData[4].title) }}</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[5].slug.current}`">{{ truncateText(trainingsData[5].title) }}</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[3].slug.current}`">{{ truncateText(trainingsData[3].title) }}</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[0].slug.current}`">{{ truncateText(trainingsData[0].title) }}</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[1].slug.current}`">{{ truncateText(trainingsData[1].title) }}</NuxtLink>
+                          <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[6].slug.current}`">{{ truncateText(trainingsData[6].title) }}</NuxtLink>
+                          <NuxtLink class="pb-2 hover:text-gray-300" :to="`/trainings/${trainingsData[2].slug.current}`">{{ truncateText(trainingsData[2].title) }}</NuxtLink>
                         </ul>
                     </div>  
                     </transition>               
@@ -132,6 +134,8 @@
 
 <script setup lang="ts">
 
+import {ref} from 'vue'
+
 import { onMounted, onBeforeUnmount, onUnmounted } from 'vue';
 
 const menuState = useState<boolean>('menuState', () => false);
@@ -139,6 +143,36 @@ const menuState = useState<boolean>('menuState', () => false);
 const useScroll = useState<boolean>('useScroll', () => false);
 
 const showDropDown = useState<boolean>('showDropDown', ()=> false)
+
+const queryTraining = groq`*[_type in 
+        [
+            "journeyManagementTraining", 
+            "HygieneAndSanitationTraining",  
+            "emergencyResponseTraining", 
+            "securityTraining", 
+            "genderBasedViolenceTraining", 
+            "basicAndAdvancedFirefightingTraining",
+            "campCoordinationandManagementTraining"
+        ]
+    ]
+    { title, slug}
+    `
+  const { data: training} = await useSanityQuery(queryTraining) 
+
+  // If it's a ref, access its value directly
+const trainingsData = ref(training.value);
+
+console.log(trainingsData)
+
+function truncateText(str: string) {
+  if(str.length >= 50) {
+    return str.slice(0, 25) + "..."
+  }
+
+  return str
+  
+}
+
 
 onMounted(() => {
   menuState.value = false
