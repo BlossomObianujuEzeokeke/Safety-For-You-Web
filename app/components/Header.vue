@@ -208,7 +208,7 @@ onBeforeUnmount(() => {
   align-items: start;
   justify-content: start;
   padding: 6px 2px 6px 2px;
-  min-width: 170px;
+ 
 }
 
 a {
