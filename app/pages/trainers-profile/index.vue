@@ -3,8 +3,8 @@
         <Header />
 
         <!--- Body ---->
-        <div class="pt-16 md:pt-16 lg:pt-28 ">
-            <div class="px-4 md:px-8 lg:px-16 py-8 pb-24 lg:pb-48 bg-lightGrayBg" id="trainers-landing-page">
+        <div class="pt-16 md:pt-16 lg:pt-28 bg-silver ">
+            <div class="trainers-landing-page px-4 md:px-8 lg:px-16 py-8 pb-24 lg:pb-48 bg-lightGrayBg" id="">
                 <h1 class="uppercase font-bold sm:text-base md:text-[28px]  text-black text-center py-4 md:py-12">
                     Profile of Key Personnel Trainers
                 </h1>
@@ -13,10 +13,10 @@
 
                     <!-- Card 1 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[1].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[1].name }}</h3>
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[1].name }}</h3>
                         <div class="pt-4">
-                            <p class="font-bold text-black">Profile Summary:</p>
-                            <p class="font-medium text-darkGray leading-8">
+                            <p class="font-semibold text-base text-black ">Profile Summary:</p>
+                            <p class="font-medium text-[17px] text-darkGray leading-8">
                                 <PortableText :value="trainersData[1].profileSummary" />
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
@@ -25,10 +25,10 @@
 
                     <!--Card 2 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[0].slug.current}`"  class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[0].name }}</h3>
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[0].name }}</h3>
                         <div class="pt-4">
-                            <p class="font-bold text-black">Profile Summary:</p>
-                            <p class="font-medium text-darkGray leading-8">
+                            <p class="font-semibold text-base text-black">Profile Summary:</p>
+                            <p class="font-medium text-[17px] text-darkGray leading-8">
                                 <PortableText :value="trainersData[0].profileSummary" />
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
@@ -37,10 +37,10 @@
 
                     <!-- Card 3 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[4].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[4].name }}</h3>
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[4].name }}</h3>
                         <div class="pt-4">
-                            <p class="font-bold text-black">Profile Summary:</p>
-                            <p class="font-medium text-darkGray leading-8">
+                            <p class="font-semibold text-base text-black">Profile Summary:</p>
+                            <p class="font-medium text-[17px] text-darkGray leading-8">
                                 <PortableText :value="trainersData[4].profileSummary" />
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
@@ -49,10 +49,10 @@
 
                     <!-- Card 4 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[2].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[2].name }}</h3>
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[2].name }}</h3>
                         <div class="pt-4">
-                            <p class="font-bold text-black">Profile Summary:</p>
-                            <p class="font-medium text-darkGray leading-8">
+                            <p class="font-semibold text-base text-black">Profile Summary:</p>
+                            <p class="font-medium text-[17px] text-darkGray leading-8">
                                 {{ truncatedProfileSummary }}
                                 <span class="text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                               </p>
@@ -61,10 +61,10 @@
 
                     <!-- Card 5 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[3].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl">{{ trainersData[3].name }}</h3>
+                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[3].name }}</h3>
                         <div class="pt-4">
-                            <p class="font-bold text-black">Profile Summary:</p>
-                            <p class="font-medium text-darkGray leading-8">
+                            <p class="font-bold text-base text-black">Profile Summary:</p>
+                            <p class="font-medium text-[17px] text-darkGray leading-8">
                                 <PortableText :value="trainersData[3].profileSummary" />
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
@@ -129,26 +129,6 @@ console.log(trainersData)
 
 <style scoped>
 
-#trainers-landing-page {
-    background-image: url('../../assets/images/trainers-page-spiral.png');
-    background-repeat: no-repeat;
-    background-size: 150px;
-    background-position: right 10%;
-}
-
-/* For large screens */
-@media (min-width: 1024px) {
-    #trainers-landing-page {
-        background-size: 150px;
-    }
-}
-
-/* For medium screens */
-@media (min-width: 768px) and (max-width: 1023px) {
-    #trainers-landing-page {
-        background-size: 150px;
-    }
-}
 
 /* For small screens */
 @media (max-width: 767px) {
