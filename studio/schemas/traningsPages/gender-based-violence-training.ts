@@ -26,5 +26,17 @@ export default defineType({
           maxLength: 96,
         },
     }),
+    defineField({
+      name: 'trainingObjectives',
+      title: 'Training Objectives',
+      type: 'array',
+      of: [{ type: 'string' }],
+    }),
+    defineField({
+      name: 'keyBenefits',
+      title: 'Key Benefits',
+      type: 'array',
+      of: [{ type: 'string' }],
+    })
   ],
 })
