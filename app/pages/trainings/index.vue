@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="py-2 text-base lg:text-[17px]">
-                    <h6 class="capitalize  font-bold py-4">Why Chose Us?</h6>
+                    <h6 class="capitalize  font-bold py-4">Why Choose Us?</h6>
                     <div class=" text-darkGray font-medium space-y-1 leading-8">
                         <!-- <span class="">- Certified Trainers: </span> -->
                         <p>

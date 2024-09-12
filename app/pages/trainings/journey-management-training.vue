@@ -14,7 +14,7 @@
               <section class="container mx-auto py-8 lg:px-16">
             
                 <!-- Page Title -->
-                <h1 class="text-3xl font-bold text-black mb-8">
+                <h1 class=" text-2xl md:text-3xl font-bold text-black mb-8">
                   {{ training[0].title }}
                 </h1>
             
