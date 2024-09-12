@@ -2,7 +2,7 @@
     <div>
          <Header />
          <!-- Body -->
-         <section class=" container mx-auto  px-8 lg:px-16 pb-32 pt-16 md:pt-8 lg:pt-28" id="">
+         <section class="trainers-landing-page container mx-auto  px-8 lg:px-16 pb-32 pt-16 md:pt-8 lg:pt-28" id="">
                  <!-- Breadcrumb -->
              <div class="flex space-x-2 py-14">
                  <NuxtLink to='/trainers-profile' class="font-bold text-base text-darkGreen">Back</NuxtLink>
@@ -11,7 +11,7 @@
              </div>
  
              <div class="lg:px-16">
-                <h1 class="text-3xl font-bold text-green-700 mb-8">{{ item[0].name}}</h1>
+                <h1 class="text-3xl font-bold text-mainGreen mb-8">{{ item[0].name}}</h1>
              
                 <div v-if="item[0].profileSummary" class="leading-8 font-medium text-[17px] text-darkGray">
                     <h3 class="font-semibold text-lg text-black">Profile Summary:</h3>

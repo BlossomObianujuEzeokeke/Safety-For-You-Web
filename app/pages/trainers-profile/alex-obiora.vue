@@ -2,7 +2,7 @@
     <div>
          <Header />
          <!-- Body -->
-         <section class=" container mx-auto  px-8 lg:px-16 pb-32 pt-16 md:pt-8 lg:pt-28" id="">
+         <section class="trainers-landing-page container mx-auto  px-8 lg:px-16 pb-32 pt-16 md:pt-8 lg:pt-28" id="">
                  <!-- Breadcrumb -->
              <div class="flex space-x-2 py-14">
                  <NuxtLink to='/trainers-profile' class="font-bold text-base text-darkGreen">Back</NuxtLink>
@@ -48,10 +48,5 @@
  
  <style scoped>
  
- .team-card {
-     background-image: url('../../assets/images/team-card-bg.svg');
-     background-repeat: no-repeat;
-     background-size: cover;
- }
  
  </style>
