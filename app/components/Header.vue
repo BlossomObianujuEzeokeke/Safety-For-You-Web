@@ -53,7 +53,7 @@
                   <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/trainers-profile">Trainers Profile</NuxtLink>
                   <div class=" relative flex items-center justify-between gap-x-4">
                     <NuxtLink class="text-sm font-bold hover:text-gray-300" to="/trainings">Trainings</NuxtLink>
-                    <svg @click="dropDownMenu" class="hover:cursor-pointer hover:text-gray-300" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg @click.stop="dropDownMenu" class="hover:cursor-pointer hover:text-gray-300" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="bxs:up-arrow" clip-path="url(#clip0_1983_91)">
                       <path id="Vector" d="M15.4727 1.99935L2.5262 1.99935C2.39512 1.9997 2.26664 2.03047 2.15458 2.08835C2.04252 2.14623 1.95113 2.22903 1.89024 2.32783C1.82935 2.42663 1.80127 2.5377 1.80903 2.64907C1.81679 2.76044 1.86008 2.86791 1.93425 2.9599L8.40751 10.9185C8.67579 11.2485 9.32168 11.2485 9.59068 10.9185L16.0639 2.9599C16.1389 2.8681 16.1828 2.76058 16.191 2.64902C16.1992 2.53746 16.1713 2.42613 16.1103 2.32712C16.0494 2.22811 15.9577 2.14521 15.8453 2.08742C15.7329 2.02963 15.604 1.99917 15.4727 1.99935Z" fill="white"/>
                       </g>
@@ -73,7 +73,7 @@
                     leave-from-class="opacity-100 transform translate-y-0"
                     leave-to-class="opacity-0 transform -translate-y-4"
                   >
-                    <div v-if="showDropDown" class="absolute bg-[#006f32] top-8 w-72 rounded-b-xl shadow-lg">
+                    <div v-if="showDropDown" ref="dropdownWrapper" class="absolute bg-[#006f32] top-8 w-72 rounded-b-xl shadow-lg">
                         <ul class=" flex flex-col space-y-4 px-3 py-5 text-sm">
                           <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[4].slug.current}`" >{{ truncateText(trainingsData[4].title) }}</NuxtLink>
                           <NuxtLink class="border-b pb-2 border-mainGreen hover:text-gray-300" :to="`/trainings/${trainingsData[5].slug.current}`">{{ truncateText(trainingsData[5].title) }}</NuxtLink>
@@ -162,8 +162,6 @@ const queryTraining = groq`*[_type in
   // If it's a ref, access its value directly
 const trainingsData = ref(training.value);
 
-console.log(trainingsData)
-
 function truncateText(str: string) {
   if(str.length >= 50) {
     return str.slice(0, 25) + "..."
@@ -173,15 +171,28 @@ function truncateText(str: string) {
   
 }
 
+// Reference to the dropdown container
+const dropdownWrapper = ref<HTMLElement | null>(null);
+
+// Function to close dropdown when clicked outside
+const handleClickOutside = (event: MouseEvent) => {
+  if (dropdownWrapper.value && !dropdownWrapper.value.contains(event.target as Node)) {
+    showDropDown.value = false;
+  }
+  // console.log(dropdownWrapper.value)
+};
+
 
 onMounted(() => {
   menuState.value = false
   showDropDown.value = false;
   window.addEventListener('scroll', handleScroll);
+  document.addEventListener('click', handleClickOutside);
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  document.removeEventListener('click', handleClickOutside);
 })
 
 
