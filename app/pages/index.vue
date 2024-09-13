@@ -122,30 +122,50 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       <div class="py-8">
         <h3 class="hidden text-center text-semiDarkGreen font-bold text-base italic py-3 md:block ">Trusted By Partners from around the World</h3>
         <div class="overflow-hidden" id="logo-slider">
-          <div class="flex items-center space-x-12 animate-yoyo">
+          <div class="flex items-center space-x-12 animate-loop">
+            <!-- Original Logos -->
             <img class="w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-1.png" alt="American Safety and Health Institute logo">
-            <img class=" w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-2.png" alt="Medical World logo">
-            <img class=" w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-3.png" alt="Certified environmental management system logo">
-            <img class=" w-44 h-12 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-4.png" alt="OSH Academy logo">
-            <img class=" w-36 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-5.png" alt="Emergency Care and Safety Institute logo">
-            <img class=" w-16 h-16 lg:w-20 lg:h-20" src="../assets/images/brand-logos/brand-logo-6.png" alt="Resuscitation council of southern africa logo">
-            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-7.png" alt=" american heart association logo">
-            <img class=" w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-8.png" alt=" royal college of nursing logo">
-            <img class=" w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-9.png" alt="internations sos logo">
-            <img class=" w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-10.png" alt="red cross logo">
-            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-11.png" alt="premiere urgence international logo">
-            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-12.png" alt="government of anambra state logo">
-            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-13.png" alt="leaders in maritime logo">
-            <img class=" w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-14.png" alt="total logo">
-            <img class=" w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-15.png" alt="iosh managing safely logo">
-            <img class=" w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-16.png" alt="nebosh logo">
+            <img class="w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-2.png" alt="Medical World logo">
+            <img class="w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-3.png" alt="Certified environmental management system logo">
+            <img class="w-44 h-12 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-4.png" alt="OSH Academy logo">
+            <img class="w-36 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-5.png" alt="Emergency Care and Safety Institute logo">
+            <img class="w-16 h-16 lg:w-20 lg:h-20" src="../assets/images/brand-logos/brand-logo-6.png" alt="Resuscitation council of southern africa logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-7.png" alt="American Heart Association logo">
+            <img class="w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-8.png" alt="Royal College of Nursing logo">
+            <img class="w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-9.png" alt="International SOS logo">
+            <img class="w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-10.png" alt="Red Cross logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-11.png" alt="Premiere Urgence International logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-12.png" alt="Government of Anambra State logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-13.png" alt="Leaders in Maritime logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-14.png" alt="Total logo">
+            <img class="w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-15.png" alt="IOSH Managing Safely logo">
+            <img class="w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-16.png" alt="NEBOSH logo">
+        
+            <!-- Duplicated Logos for Seamless Loop -->
+            <img class="w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-1.png" alt="American Safety and Health Institute logo">
+            <img class="w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-2.png" alt="Medical World logo">
+            <img class="w-20 h-18 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-3.png" alt="Certified environmental management system logo">
+            <img class="w-44 h-12 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-4.png" alt="OSH Academy logo">
+            <img class="w-36 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-5.png" alt="Emergency Care and Safety Institute logo">
+            <img class="w-16 h-16 lg:w-20 lg:h-20" src="../assets/images/brand-logos/brand-logo-6.png" alt="Resuscitation council of southern africa logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-7.png" alt="American Heart Association logo">
+            <img class="w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-8.png" alt="Royal College of Nursing logo">
+            <img class="w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-9.png" alt="International SOS logo">
+            <img class="w-20 h-12 lg:w-24 lg:h-16" src="../assets/images/brand-logos/brand-logo-10.png" alt="Red Cross logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-11.png" alt="Premiere Urgence International logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-12.png" alt="Government of Anambra State logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-13.png" alt="Leaders in Maritime logo">
+            <img class="w-20 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-14.png" alt="Total logo">
+            <img class="w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-15.png" alt="IOSH Managing Safely logo">
+            <img class="w-16 h-16 lg:w-24 lg:h-20" src="../assets/images/brand-logos/brand-logo-16.png" alt="NEBOSH logo">
           </div>
         </div>
+        
 
       </div>
 
       <!------ Safety For You Services -------->
-      <div class="flex flex-col md:flex-row justify-around items-center px-4 md:px-16 py-4 md:py-24 border-none lg:border-b border-darkGray/15">
+      <div class="flex flex-col md:flex-row justify-around items-center px-4 md:px-16 py-4 md:py-24 border-0 lg:border-b border-darkGray/20">
         <!-- Text Section -->
         <div class="w-full lg:w-[55%] mb-8 md:mb-0">
           <h3 class=" uppercase text-lg text-center md:text-start md:text-3xl font-bold text-darkGreen pb-4 md:pb-5">Safety For You Services LTD</h3>
@@ -182,7 +202,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         <Mobilecarousel></Mobilecarousel>
 
         <!--- Text Carousel-->
-        <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-2xl bg-white shadow-none lg:shadow-lg py-8 px-0 lg:px-6">
+        <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-2xl bg-white shadow-none lg:shadow-lg py-2 px-0 lg:px-8">
             <div class=" hidden lg:block w-[20%]">
                 <img class=" w-full" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
             </div>
@@ -400,28 +420,33 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
   background-position: top right;
 }
 
+/** Logo Slider **/
+
 #logo-slider {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
-.animate-yoyo {
+.animate-loop {
   display: flex;
-  animation: yoyo 25s linear infinite;
+  width: calc(200%); /* This ensures the total width for all logos plus the duplicate */
+  animation: loop 30s linear infinite;
 }
 
-
-@keyframes yoyo {
+@keyframes loop {
   0% {
     transform: translateX(0);
   }
-  50% {
-    transform: translateX(-75%);
-  }
   100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
 }
+
+/** End Logo Slider **/
+
+
+/** Text Slider **/
 
 #text-slider {
   display: flex;
@@ -441,9 +466,11 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 .animate-scroll {
   display: inline-flex;
   white-space: nowrap;
-  animation: scroll 40s linear infinite; /* Consistent speed across all screen sizes */
+  animation: scroll 20s linear infinite; /* Consistent speed across all screen sizes */
   width: calc(200% + 2rem);
 }
+
+/** End Text Slider **/
 
 #right-spiral {
   fill: var(--Main-Green, #4CAF4F);
