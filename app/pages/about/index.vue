@@ -82,7 +82,7 @@
                     <p class="text-center text-darkGray text-base sm:text-lg font-medium pb-10 pt-2">Key decision-makers at Safety for you LTD</p>
                     
                     <!--- Team Cards -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div id="team" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         
                         <!-- Card 1 -->
                         <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
@@ -179,7 +179,7 @@
 
 
             <!---------- Gallery ----------->
-            <div class="py-8 md:px-16 md:py-16">
+            <div id="gallery" class="py-8 md:px-16 md:py-16">
                 <h3 class=" text-4xl uppercase  lg:pb-8 text-center text-darkGreen md:text-4xl font-bold">gallery</h3>
                     <!------ Gallery 1 -------->
                     <div class="pt-10 mb-8 lg:mb-10">
@@ -277,12 +277,6 @@ import {ref} from 'vue'
 
 const route = useRoute()
 
-const query = groq`*[ _type == "team" && defined(slug.current) ]`
-// const { data: items } = await useSanityQuery<Post[]>(query)
-
-// console.log(items)
-
-
   const queryTeam = groq`*[_type in ["alexObioraTeamPage", "irfanTeamPage",  "kamsyMaduekeTeamPage", "princewillTeamPage"]]{
     name,
     position,
@@ -294,10 +288,6 @@ const query = groq`*[ _type == "team" && defined(slug.current) ]`
 
   // If it's a ref, access its value directly
 const teamData = ref(team.value);
-
-  console.log(teamData)
-
-
 
 </script>
 
