@@ -18,14 +18,14 @@
                         <div class="text-white space-y-5">
                             <h3 class=" uppercase font-bold text-base">navigation</h3>
                             <NuxtLink to="/" class="block mt-2 text-base font-medium hover:text-gray-300">Home</NuxtLink>
-                            <NuxtLink to="" class="block mt-2 text-base font-medium hover:text-gray-300">Gallery</NuxtLink>
+                            <NuxtLink to="/about#gallery" class="block mt-2 text-base font-medium hover:text-gray-300">Gallery</NuxtLink>
                             <NuxtLink to="/privacy-policy" class="block mt-2 text-base font-medium hover:text-gray-300">Privacy Policy</NuxtLink>
                         </div>
     
                         <div class="text-white space-y-6">
                             <h3 class=" uppercase font-bold">company</h3>
-                            <NuxtLink to="/about-us" class="block mt-2 text-base font-medium hover:text-gray-300">About Us</NuxtLink>
-                            <NuxtLink to="" class="block mt-2 text-base font-medium hover:text-gray-300">Our Team</NuxtLink>
+                            <NuxtLink to="/about" class="block mt-2 text-base font-medium hover:text-gray-300">About Us</NuxtLink>
+                            <NuxtLink to="/about#team" class="block mt-2 text-base font-medium hover:text-gray-300">Our Team</NuxtLink>
                             <NuxtLink to="/trainings" class="block mt-2 text-base font-medium hover:text-gray-300">Trainings</NuxtLink>
                             <NuxtLink to="/trainers-profile" class="block mt-2 text-base font-medium hover:text-gray-300">Our Trainers</NuxtLink>
                         </div>
