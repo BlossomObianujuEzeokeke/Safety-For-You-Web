@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 764px) {
   #footer {
-    background-size: 800px;
+    background-size: 600px;
     background-position: center;
   }
 }
