@@ -207,7 +207,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               <img class="w-[180px] h-[170px] lg:max-w-[180px] lg:max-h-[180px] object-cover flex-shrink-0" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
             </div>
             <div class=" w-full lg:w-[80%] flex flex-col items-end justify-between lg:pr-4">
-              <p class="font-semibold text-base lg:italic text-black px-4 pt-4 lg:px-0 lg:leading-7">
+              <p class="font-bold text-base lg:italic text-black px-4 pt-4 lg:px-0 lg:leading-7">
                 Safety For You Services Ltd recognizes humanitarian personnel and those who have died working for humanitarian causes.
                  We join the rest of the world on the 19th of August each year to mark the world humanitarian day.
               </p>
