@@ -15,14 +15,14 @@ html {
 .trainers-landing-page {
     background-image: url('../../assets/images/trainers-page-spiral.png');
     background-repeat: no-repeat;
-    background-size: 150px;
+    /* background-size: 200px; */
     background-position: right 10%;
 }
 
 /* For large screens */
 @media (min-width: 1024px) {
     .trainers-landing-page {
-        background-size: 150px;
+        background-size: 200px;
     }
 }
 

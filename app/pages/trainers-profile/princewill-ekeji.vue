@@ -6,13 +6,13 @@
                 <div class="flex space-x-2 py-14">
                     <NuxtLink to='/trainers-profile' class="font-bold text-base text-darkGreen">Back</NuxtLink>
                     <span class="text-darkGreen">|</span>
-                    <p class="font-semibold text-base text-semiDarkGreen">{{ trainer[0].name }}</p>
+                    <p class="font-semibold text-base text-mainGreen">{{ trainer[0].name }}</p>
                 </div>
               
                 <div class="lg:px-16">
                     <!-- Title Section -->
                     <div class="mb-6">
-                        <h1 class="text-3xl font-bold text-mainGreen pb-5 md:pb-8 md:pt-2">{{ trainer[0].name }}</h1>
+                        <h1 class="text-3xl font-bold text-semiDarkGreen pb-5 md:pb-8 md:pt-2 uppercase">{{ trainer[0].name }}</h1>
 
                         <div class="lg:pr-96">
                             <div v-if="trainer[0].profileSummary" class="leading-8 font-medium text-[17px] text-darkGray">

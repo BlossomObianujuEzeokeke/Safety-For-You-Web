@@ -13,11 +13,12 @@
 
                     <!-- Card 1 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[1].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[1].name }}</h3>
+                        <h3 class=" text-semiDarkGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[1].name }}</h3>
                         <div class="pt-4">
                             <p class="font-semibold text-base text-black ">Profile Summary:</p>
                             <p class="font-medium text-[17px] text-darkGray leading-8">
-                                <PortableText :value="trainersData[1].profileSummary" />
+                                <!-- <PortableText :value="trainersData[1].profileSummary" /> -->
+                                {{ trainersData[1].profileSummary[0].children[0].text }}...
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
                         </div>
@@ -25,11 +26,12 @@
 
                     <!--Card 2 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[0].slug.current}`"  class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[0].name }}</h3>
+                        <h3 class=" text-semiDarkGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[0].name }}</h3>
                         <div class="pt-4">
                             <p class="font-semibold text-base text-black">Profile Summary:</p>
                             <p class="font-medium text-[17px] text-darkGray leading-8">
-                                <PortableText :value="trainersData[0].profileSummary" />
+                                <!-- <PortableText :value="trainersData[0].profileSummary" /> -->
+                                {{ trainersData[0].profileSummary[0].children[0].text }}...
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
                         </div>
@@ -37,11 +39,12 @@
 
                     <!-- Card 3 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[4].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[4].name }}</h3>
+                        <h3 class=" text-semiDarkGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[4].name }}</h3>
                         <div class="pt-4">
                             <p class="font-semibold text-base text-black">Profile Summary:</p>
                             <p class="font-medium text-[17px] text-darkGray leading-8">
-                                <PortableText :value="trainersData[4].profileSummary" />
+                                <!-- <PortableText :value="trainersData[4].profileSummary" /> -->
+                                {{ trainersData[4].profileSummary[0].children[0].text }}...
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
                         </div>
@@ -49,11 +52,11 @@
 
                     <!-- Card 4 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[2].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[2].name }}</h3>
+                        <h3 class=" text-semiDarkGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[2].name }}</h3>
                         <div class="pt-4">
                             <p class="font-semibold text-base text-black">Profile Summary:</p>
                             <p class="font-medium text-[17px] text-darkGray leading-8">
-                                {{ truncatedProfileSummary }}
+                                {{ truncatedProfileSummary }}...
                                 <span class="text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                               </p>
                         </div>
@@ -61,11 +64,12 @@
 
                     <!-- Card 5 -->
                     <NuxtLink :to="`/trainers-profile/${trainersData[3].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
-                        <h3 class=" text-mainGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[3].name }}</h3>
+                        <h3 class="text-semiDarkGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[3].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-base text-black">Profile Summary:</p>
                             <p class="font-medium text-[17px] text-darkGray leading-8">
-                                <PortableText :value="trainersData[3].profileSummary" />
+                                <!-- <PortableText :value="trainersData[3].profileSummary" /> -->
+                                {{ trainersData[1].profileSummary[0].children[0].text }}...
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
                         </div>
@@ -116,7 +120,7 @@ const truncatedProfileSummary = computed(() => {
   if (trainer.value?.profileSummary[0]?.children[0]?.text) {
     const fullText = trainer.value.profileSummary[0].children[0].text;
     console.log(fullText.length)
-    return truncateText(fullText, 250); // Truncate to 100 characters
+    return truncateText(fullText, 220); // Truncate to 100 characters
   } else {
     return '';
   }
