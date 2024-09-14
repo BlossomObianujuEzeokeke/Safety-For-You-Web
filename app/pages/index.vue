@@ -202,12 +202,12 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         <Mobilecarousel></Mobilecarousel>
 
         <!--- Text Carousel-->
-        <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-2xl bg-white shadow-none lg:shadow-lg pt-4 pb-4 px-0 lg:px-8">
+        <div class=" flex lg:border border-[#B7F1B9] rounded-none lg:rounded-[2rem] bg-white shadow-none lg:shadow-lg px-0 py-4 pb-6 lg:px-8">
             <div class=" hidden lg:block w-[20%]">
-              <img class="w-[200px] h-[180px] lg:max-w-[200px] lg:max-h-[180px] object-cover flex-shrink-0" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
+              <img class="w-[180px] h-[170px] lg:max-w-[180px] lg:max-h-[180px] object-cover flex-shrink-0" src="../assets/images/whdlogo.jpg" alt="World Humanitarian Day Logo">
             </div>
             <div class=" w-full lg:w-[80%] flex flex-col items-end justify-between">
-              <p class="font-semibold text-base lg:italic text-black px-4 lg:px-0">
+              <p class="font-semibold text-base lg:italic text-black px-4 pt-4 lg:px-0">
                 Safety For You Services Ltd recognizes humanitarian personnel and those who have died working for humanitarian causes.
                  We join the rest of the world on the 19th of August each year to mark the world humanitarian day.
               </p>
