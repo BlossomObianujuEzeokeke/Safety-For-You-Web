@@ -3,7 +3,7 @@
         <Header />
 
         <!-- Body -->
-        <div class="pt-16 md:pt-8 lg:pt-24 overflow-hidden">
+        <div class="pt-16 md:pt-8 lg:pt-20 overflow-hidden">
             <div class="flex justify-center items-center min-h-screen" id="contact-us">
                 <div class="flex flex-col items-start">
                     <h1 class="font-bold text-xl md:text-2xl lg:text-[40px] text-black mb-8">Get in Touch</h1>
