@@ -1,8 +1,12 @@
 <template>
   <div v-if="showCarousel" id="carousel-container" class="py-52 relative overflow-hidden">
-    <h3 class="hidden min-755:block text-darkGreen italic font-bold text-xl absolute top-[15%] left-[30%]">
+    <!-- <h3 class="hidden min-755:block text-darkGreen italic font-bold text-xl absolute top-[15%] left-[30%]">
+      Aid Workers Braving Risks for a Safer World
+    </h3> -->
+    <h3 class="hidden min-755:block text-darkGreen italic font-bold text-xl absolute top-[15%] left-1/2 transform -translate-x-1/2">
       Aid Workers Braving Risks for a Safer World
     </h3>
+    
 
     <!-- Carousel Images -->
     <div
@@ -42,48 +46,54 @@
       </div>
     </div>
 
-    <!-- Previous Button -->
-   <!-- Previous Button -->
-<svg
-@click="prev"
-:disabled="isPrevDisabled"
-:class="[
-  isPrevDisabled ? 'border-lightGray' : 'border-mainGreen hover:bg-lightGreen', 
-  'hover:cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-[3%] lg:left-[5%] w-12 h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 border-[3px] rounded-full bg-white'
-]" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
->
-<path
-  d="M2 25C2 12.2974 12.2975 2 25 2C37.7026 2 48 12.2975 48 25C48 37.7025 37.7025 48 25 48C12.2975 48 2 37.7025 2 25Z"
-  fill="white"
-/>
-<path
-  :stroke="isPrevDisabled ?  '#C2C2C2' : '#4CAF4F' "
-  d="M27.99 32.36L21.755 26.5704C20.7751 25.6605 20.7751 24.1095 21.755 23.1996L27.99 17.41"
-  stroke-width="3"
-  stroke-linecap="round"
-/>
-</svg>
+        <!-- Previous Button -->
+        <svg
+        @click="prev"
+        :disabled="isPrevDisabled"
+        :class="[
+          isPrevDisabled ? 'border-lightGray' : 'border-mainGreen hover:bg-lightGreen',
+          'hover:cursor-pointer absolute button-left transform -translate-y-1/2 w-12 h-12 md:w-10 md:h-10 lg:w-12 lg:h-12 sm:w-8 sm:h-8 border-[3px] rounded-full bg-white'
+        ]"
+        viewBox="0 0 50 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 25C2 12.2974 12.2975 2 25 2C37.7026 2 48 12.2975 48 25C48 37.7025 37.7025 48 25 48C12.2975 48 2 37.7025 2 25Z"
+          fill="white"
+        />
+        <path
+          :stroke="isPrevDisabled ?  '#C2C2C2' : '#4CAF4F'"
+          d="M27.99 32.36L21.755 26.5704C20.7751 25.6605 20.7751 24.1095 21.755 23.1996L27.99 17.41"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+      </svg>
+  
+      <!-- Next Button -->
+      <svg
+        @click="next"
+        :disabled="isNextDisabled"
+        :class="[
+          isNextDisabled ? 'border-lightGray' : 'border-mainGreen hover:bg-lightGreen',
+          'hover:cursor-pointer absolute button-right transform -translate-y-1/2 w-12 h-12 md:w-10 md:h-10 lg:w-12 lg:h-12 sm:w-8 sm:h-8 border-[3px] rounded-full bg-white'
+        ]"
+        viewBox="0 0 50 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M48 25C48 12.2974 37.7025 2 25 2C12.2974 2 2 12.2975 2 25C2 37.7025 12.2975 48 25 48C37.7025 48 48 37.7025 48 25Z"
+          fill="white"
+        />
+        <path
+          :stroke="isNextDisabled ?  '#C2C2C2' : '#4CAF4F'"
+          d="M22.01 32.36L28.245 26.5704C29.2249 25.6605 29.2249 24.1095 28.245 23.1996L22.01 17.41"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+      </svg>
 
-<!-- Next Button -->
-<svg
-@click="next"
-:disabled="isNextDisabled"
-:class="[
-  isNextDisabled ? 'border-lightGray' : 'border-mainGreen hover:bg-lightGreen',
-  'hover:cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-[3%] lg:right-[5%] w-12 h-12 md:w-10 md:h-10 sm:w-8 sm:h-8 border-[3px] rounded-full bg-white'
-]" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"
->
-<path
-  d="M48 25C48 12.2974 37.7025 2 25 2C12.2974 2 2 12.2975 2 25C2 37.7025 12.2975 48 25 48C37.7025 48 48 37.7025 48 25Z"
-  fill="white"
-/>
-<path
-  :stroke="isNextDisabled ?  '#C2C2C2' : '#4CAF4F' "
-  d="M22.01 32.36L28.245 26.5704C29.2249 25.6605 29.2249 24.1095 28.245 23.1996L22.01 17.41"
-  stroke-width="3"
-  stroke-linecap="round"
-/>
-</svg>
 
   </div>
 </template>
@@ -137,6 +147,7 @@ onBeforeUnmount(() => {
   background-size: 750px;
 }
 
+
 @media (max-width: 768px) {
   #carousel-container {
     background-size: 500px;
@@ -148,4 +159,35 @@ onBeforeUnmount(() => {
     display: none;
   }
 }
+
+.button-left {
+  top: 50%;
+  left: calc(50% - 520px); /* Position relative to spiral background */
+}
+
+.button-right {
+  top: 50%;
+  right: calc(50% - 520px); /* Position relative to spiral background */
+}
+
+@media (max-width: 1088px) {
+  .button-left {
+    left: calc(50% - 470px); /* Adjust for smaller screens */
+  }
+
+  .button-right {
+    right: calc(50% - 470px); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .button-left {
+    left: calc(50% - 400px); /* Further adjustments for smaller screens */
+  }
+
+  .button-right {
+    right: calc(50% - 160px); /* Further adjustments for smaller screens */
+  }
+}
+
 </style>
