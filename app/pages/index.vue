@@ -73,7 +73,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </svg>
 
               <!--- Text Box --->
-              <div class="absolute top-28 left-20 w-[40rem] bg-white bg-opacity-70 py-6 pl-6 space-y-4">
+              <div class="absolute top-28 left-20 w-[41rem] bg-white bg-opacity-70 py-6 pl-6 space-y-4">
                 <span class=" capitalize text-mainGreen font-semibold">award winning training company</span>
                 <h1 class="capitalize text-[41.8px] font-semibold leading-[1.40]">safeguarding lives protecting environments empowering organizations</h1>
                 <NuxtLink to="/trainings" class="capitalize block font-medium text-lg text-darkGray pb-2 hover:text-linkBlue hover:underline transition-all duration-700">learn more about our HSE privacy policy statement</NuxtLink>
