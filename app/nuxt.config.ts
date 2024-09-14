@@ -15,6 +15,18 @@ export default defineNuxtConfig({
         // You can add more icons for different formats/devices if needed
       ],
     },
+
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+  router: {
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) {
+        return savedPosition; // Use saved scroll position when navigating back
+      } else if (to.hash) {
+        return { el: to.hash, behavior: 'smooth', top: 100 }; // Default behavior for hashes
+      }
+      return { top: 0 }; // Scroll to top for normal route navigation
+    }
   },
   modules: [
     '@nuxtjs/sanity',
@@ -53,6 +65,8 @@ export default defineNuxtConfig({
       'postcss-nested': {},
     },
   },
-
   compatibilityDate: '2024-08-12',
+
 })
+
+

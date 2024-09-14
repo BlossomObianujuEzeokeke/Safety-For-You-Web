@@ -8,6 +8,10 @@ body {
     @apply font-text-montserrat;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .trainers-landing-page {
     background-image: url('../../assets/images/trainers-page-spiral.png');
     background-repeat: no-repeat;
