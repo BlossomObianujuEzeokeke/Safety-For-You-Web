@@ -73,12 +73,12 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               </svg>
 
               <!--- Text Box --->
-              <div class="absolute top-28 left-20 w-[40rem] bg-white bg-opacity-70 py-6 pl-8 space-y-4">
+              <div class="absolute top-28 left-20 w-[40rem] bg-white bg-opacity-70 py-6 pl-6 space-y-4">
                 <span class=" capitalize text-mainGreen font-semibold">award winning training company</span>
-                <h1 class="capitalize text-[42px] font-semibold leading-[1.40]">safeguarding lives protecting environments empowering organizations</h1>
-                <NuxtLink to="/trainings" class="capitalize block font-medium text-lg text-darkGray pb-4 hover:text-linkBlue hover:underline transition-all duration-700">learn more about our HSE privacy policy statement</NuxtLink>
+                <h1 class="capitalize text-[41.8px] font-semibold leading-[1.40]">safeguarding lives protecting environments empowering organizations</h1>
+                <NuxtLink to="/trainings" class="capitalize block font-medium text-lg text-darkGray pb-2 hover:text-linkBlue hover:underline transition-all duration-700">learn more about our HSE privacy policy statement</NuxtLink>
 
-                <NuxtLink to="/trainings" class=" block text-center bg-semiDarkGreen text-white font-bold outline-none hover:bg-darkGreen transition-colors duration-300 px-8 py-3 rounded-md w-1/2">GET STARTED</NuxtLink>
+                <NuxtLink to="/trainings" class=" block text-center bg-semiDarkGreen text-white font-bold outline-none hover:bg-darkGreen transition-colors duration-300 px-8 py-2 rounded-md w-1/2">GET STARTED</NuxtLink>
               </div>
           </div>
             
