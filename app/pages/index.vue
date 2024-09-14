@@ -165,7 +165,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
       </div>
 
       <!------ Safety For You Services -------->
-      <div class="flex flex-col md:flex-row justify-around items-center px-4 md:px-16 py-4 md:py-24 border-0 lg:border-b border-darkGray/20">
+      <div class="flex flex-col md:flex-row justify-around items-center px-4 md:pl-16 py-4 md:py-24 border-0 lg:border-b border-darkGray/20">
         <!-- Text Section -->
         <div class="w-full lg:w-[55%] mb-8 md:mb-0">
           <h3 class=" uppercase text-lg text-center md:text-start md:text-3xl font-bold text-darkGreen pb-4 md:pb-5">Safety For You Services LTD</h3>
@@ -416,7 +416,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 #safety4uservices {
   background-image: url('../assets/images/safety_for_you_ltd_spiral_bg.svg');
   background-repeat: no-repeat;
-  background-size: 250px;
+  background-size: 220px;
   background-position: top right;
 }
 
