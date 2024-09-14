@@ -76,7 +76,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
               <div class="absolute top-28 left-20 w-[41rem] bg-white bg-opacity-70 py-6 pl-6 space-y-4">
                 <span class=" capitalize text-mainGreen font-semibold">award winning training company</span>
                 <h1 class="capitalize text-[41.8px] font-semibold leading-[1.40]">safeguarding lives protecting environments empowering organizations</h1>
-                <NuxtLink to="/trainings" class="capitalize block font-medium text-lg text-darkGray pb-2 hover:text-linkBlue hover:underline transition-all duration-700">learn more about our HSE privacy policy statement</NuxtLink>
+                <NuxtLink to="/privacy-policy" class="capitalize block font-medium text-lg text-darkGray pb-2 hover:text-linkBlue hover:underline transition-all duration-700">learn more about our HSE privacy policy statement</NuxtLink>
 
                 <NuxtLink to="/trainings" class=" block text-center bg-semiDarkGreen text-white font-bold outline-none hover:bg-darkGreen transition-colors duration-300 px-8 py-2 rounded-md w-1/2">GET STARTED</NuxtLink>
               </div>
@@ -185,7 +185,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
         </div>
       
         <!-- Circular Image Section -->
-        <div id="safety4uservices" class="hidden relative w-full md:w-[45%] lg:flex justify-center">
+        <div id="safety4uservices" class="hidden relative w-full md:w-[45%] lg:flex justify-start">
           <div class="flex relative overflow-hidden rounded-full w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] border-2 border-mainGreen">
             <img src="../assets/images/S4u-services-section.jpg" alt="male and Female worker" class="rounded-full w-full h-full object-cover">
             <!-- <img src="../assets/images/S4U-services-section-bg.png" alt="male and Female worker" class=" w-96 h-96"> -->
