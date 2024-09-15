@@ -5,7 +5,7 @@
         <!-- Body -->
         <div class=" pt-16 md:pt-8 lg:pt-28 overflow-hidden">
                  <!-------- Hero ------->
-                <section class="lg:flex w-full h-[320px] md:h-[420px] ">
+                <section class="lg:flex w-full h-[300px] md:h-[420px] ">
                     <div class="hidden lg:block w-full lg:w-1/2" id="left-hero">
                         <!-- Left hero section content -->
                     </div>
