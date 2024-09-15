@@ -4,7 +4,7 @@
         <!--- Body --->
          <div class="pt-16 md:pt-8 lg:pt-28 overflow-hidden">
              <!-------- Hero ------->
-            <section class="lg:flex w-full h-[300px] md:h-[420px] ">
+            <section class="lg:flex w-full h-[320px] md:h-[420px] ">
                 <div class="hidden lg:block w-full lg:w-1/2" id="trainings-left-hero">
                     <!-- Left hero section content -->
                 </div>
@@ -17,8 +17,11 @@
                         <div class="absolute top-1 left-2 w-44 h-44 rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.8)] to-[rgba(0,82,38,0.8)] z-10"></div>
                     </div> -->
 
-                    <div class="relative w-28 sm:w-36 md:w-48">
-                        <img class="w-full h-full relative z-10 rounded-full" src="../../assets/images/safety_for_you_logo.png" alt="Safety For You Logo">
+                    <div class="relative w-16 h-16 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36">
+                        <!-- Image -->
+                        <img class="w-full h-full relative z-10 rounded-full object-cover" src="../../assets/images/safety_for_you_logo.png" alt="Safety For You Logo">
+                        
+                        <!-- Background overlay (same size as the image) -->
                         <div class="absolute inset-0 w-full h-full rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.5)] to-[rgba(0,82,38,0.5)] z-20"></div>
                     </div>
                     

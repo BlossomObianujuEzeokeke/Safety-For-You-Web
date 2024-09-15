@@ -113,7 +113,7 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
 
           <h3 class=" font-bold text-center">Safety For You Ltd: Your trusted partner in comprehensive HSE training and consultancy</h3>
 
-          <button class=" uppercase text-white bg-darkGreen font-bold text-base rounded-lg w-full py-2 mt-4 mb-6">get started</button>
+          <NuxtLink to="/trainings" class=" block text-center uppercase text-white bg-darkGreen font-bold text-base rounded-lg w-full py-2 mt-4 mb-6">get started</NuxtLink>
         </div>
         
       </div>
