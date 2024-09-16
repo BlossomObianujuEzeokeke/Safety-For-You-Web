@@ -5,11 +5,11 @@
         <!-- Body -->
         <div class=" pt-16 md:pt-8 lg:pt-28 overflow-hidden">
                  <!-------- Hero ------->
-                <section class="lg:flex w-full h-[300px] md:h-[420px] ">
+                <section class="lg:flex w-full h-[300px] md:h-[420px]">
                     <div class="hidden lg:block w-full lg:w-1/2" id="left-hero">
                         <!-- Left hero section content -->
                     </div>
-                    <div class=" flex flex-col items-center justify-end sm:justify-center h-full w-full lg:w-1/2 pb-8 sm:pb-10 pt-16 md:pb-0 space-y-4 sm:space-y-5 md:space-y-8" id="right-hero">
+                    <div class=" flex flex-col items-center justify-end sm:justify-center h-full w-full lg:w-1/2 p-8 sm:pb-10 pt-16 md:pb-0 space-y-4 sm:space-y-5 md:space-y-8" id="right-hero">
                         <h1 class="uppercase font-bold text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white z-10">who we are</h1>
 
                         <div class="relative w-16 h-16 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36">
@@ -115,7 +115,7 @@
                                     <NuxtLink :to="`/about/${teamData[2].slug.current}`" class="flex flex-col h-full">
                                         <!-- Image Section -->
                                         <div class="flex-grow overflow-hidden">
-                                        <img class="object-cover w-full h-full scale-105 mt-4 md:mt-0 lg:scale-110 transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[2].image).width(1920).url()"  :alt="teamData[2].name">
+                                        <img class="object-cover w-full h-full mt-4 md:mt-0 scale-110 transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[2].image).width(1920).url()"  :alt="teamData[2].name">
                                         </div>
                                         <!-- Text Section -->
                                         <div class="bg-darkGreen py-1.5 sm:py-1 md:py-2">
