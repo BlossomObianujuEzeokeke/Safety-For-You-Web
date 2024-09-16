@@ -22,7 +22,7 @@
                         <img class="w-full h-full relative z-10 rounded-full object-cover" src="../../assets/images/safety_for_you_logo.png" alt="Safety For You Logo">
                         
                         <!-- Background overlay (same size as the image) -->
-                        <div class="absolute inset-0 w-full h-full rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.5)] to-[rgba(0,82,38,0.5)] z-20"></div>
+                        <div class="absolute inset-0 w-full h-full rounded-full bg-gradient-to-b from-[rgba(0,82,38,0.1)] to-[rgba(0,82,38,0.1)] lg:from-[rgba(0,82,38,0.5)] lg:to-[rgba(0,82,38,0.5)] z-20"></div>
                     </div>
                     
                 </div>
