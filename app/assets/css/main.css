@@ -27,8 +27,8 @@ html {
 }
 
 /* For medium screens */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 768px)  {
     .trainers-landing-page {
-        background-size: 150px;
+        background-image :  unset;
     }
 }

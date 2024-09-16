@@ -476,12 +476,13 @@ const { enabled: previewEnabled, inFrame } = useSanityVisualEditingState()
   fill: var(--Main-Green, #4CAF4F);
 }
 
+/**
 @media (max-width: 1024px) {
   .text-box {
-    height: 650px;
+    
   }
   
-}
+} **/
 
 #construction_workers_section {
   background-image: url('../assets/images/construction_workers_left_spiral._bg.svg'), url('../assets/images/construction_workers_right_spiral_bg.svg');
