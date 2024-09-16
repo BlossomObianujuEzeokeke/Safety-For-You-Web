@@ -87,7 +87,6 @@
                         
                         <!--- Team Cards -->
                         <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                            
                             <!-- Card 1 -->
                             <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
                                 <NuxtLink :to="`/about/${teamData[3].slug.current}`" class="flex flex-col h-full">
@@ -108,64 +107,20 @@
                                     </div>
                                     </div>
                                 </NuxtLink>
-                                </div>
+                            </div>
                                 
-                                <!-- Card 2 -->
-                                <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
-                                    <NuxtLink :to="`/about/${teamData[2].slug.current}`" class="flex flex-col h-full">
-                                        <!-- Image Section -->
-                                        <div class="flex-grow overflow-hidden">
-                                        <img class="object-cover w-full h-full mt-4 md:mt-0 scale-110 transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[2].image).width(1920).url()"  :alt="teamData[2].name">
-                                        </div>
-                                        <!-- Text Section -->
-                                        <div class="bg-darkGreen py-1.5 sm:py-1 md:py-2">
-                                        <h3 class="text-center text-white font-bold text-base md:text-lg pb-1 sm:pb-1.5">{{ teamData[2].name }}</h3>
-                                        <div class="flex items-center justify-center space-x-4 pb-1">
-                                            <p class="text-white font-semibold text-xs sm:text-sm lg:text-base">{{teamData[2].position}}</p>
-                                            <svg class="ml-2 w-5 h-5" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g class="transition-all duration-700 group-hover:opacity-100 md:group-hover:opacity-[1] group-hover:stroke-white" opacity="0.2 md:opacity-[1]">
-                                                <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                            </g>
-                                            </svg>
-                                        </div>
-                                        </div>
-                                    </NuxtLink>
-                                </div>
-                            
-                                <!-- Card 3 -->
-                                <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
-                                    <NuxtLink :to="`/about/${teamData[1].slug.current}`" class="flex flex-col h-full">
-                                        <!-- Image Section -->
-                                        <div class="flex-grow overflow-hidden">
-                                        <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[1].image).width(1920).url()"  :alt="teamData[1].name">
-                                        </div>
-                                        <!-- Text Section -->
-                                        <div class="bg-darkGreen py-1.5 sm:py-1 md:py-2">
-                                        <h3 class="text-center text-white font-bold text-base md:text-lg pb-1 sm:pb-1.5">{{teamData[1].name}}</h3>
-                                        <div class="flex items-center justify-center space-x-4 pb-1">
-                                            <p class="text-white font-semibold text-xs sm:text-sm lg:text-base">{{teamData[1].position}}</p>
-                                            <svg class="ml-2 w-5 h-5" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g class="transition-all duration-700 group-hover:opacity-100 md:group-hover:opacity-[1] group-hover:stroke-white" opacity="0.2 md:opacity-[1]">
-                                                <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-                                            </g>
-                                            </svg>
-                                        </div>
-                                        </div>
-                                    </NuxtLink>
-                                </div>
-                            
-                                <!-- Card 4 -->
-                                <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
-                                <NuxtLink :to="`/about/${teamData[0].slug.current}`" class="flex flex-col h-full">
+                            <!-- Card 2 -->
+                            <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
+                                <NuxtLink :to="`/about/${teamData[2].slug.current}`" class="flex flex-col h-full">
                                     <!-- Image Section -->
                                     <div class="flex-grow overflow-hidden">
-                                    <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[0].image).width(1920).url()"  :alt="teamData[0].name">
+                                    <img class="object-cover w-full h-full mt-4 md:mt-0 scale-110 transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[2].image).width(1920).url()"  :alt="teamData[2].name">
                                     </div>
                                     <!-- Text Section -->
                                     <div class="bg-darkGreen py-1.5 sm:py-1 md:py-2">
-                                    <h3 class="text-center text-white font-bold text-base md:text-lg pb-1 sm:pb-1.5">{{teamData[0].name}}</h3>
+                                    <h3 class="text-center text-white font-bold text-base md:text-lg pb-1 sm:pb-1.5">{{ teamData[2].name }}</h3>
                                     <div class="flex items-center justify-center space-x-4 pb-1">
-                                        <p class="text-white font-semibold text-xs sm:text-sm lg:text-base">{{teamData[0].position}}</p>
+                                        <p class="text-white font-semibold text-xs sm:text-sm lg:text-base">{{teamData[2].position}}</p>
                                         <svg class="ml-2 w-5 h-5" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g class="transition-all duration-700 group-hover:opacity-100 md:group-hover:opacity-[1] group-hover:stroke-white" opacity="0.2 md:opacity-[1]">
                                             <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -174,9 +129,51 @@
                                     </div>
                                     </div>
                                 </NuxtLink>
-                                </div>
-                   
+                            </div>
                         
+                            <!-- Card 3 -->
+                            <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
+                                <NuxtLink :to="`/about/${teamData[1].slug.current}`" class="flex flex-col h-full">
+                                    <!-- Image Section -->
+                                    <div class="flex-grow overflow-hidden">
+                                    <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[1].image).width(1920).url()"  :alt="teamData[1].name">
+                                    </div>
+                                    <!-- Text Section -->
+                                    <div class="bg-darkGreen py-1.5 sm:py-1 md:py-2">
+                                    <h3 class="text-center text-white font-bold text-base md:text-lg pb-1 sm:pb-1.5">{{teamData[1].name}}</h3>
+                                    <div class="flex items-center justify-center space-x-4 pb-1">
+                                        <p class="text-white font-semibold text-xs sm:text-sm lg:text-base">{{teamData[1].position}}</p>
+                                        <svg class="ml-2 w-5 h-5" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g class="transition-all duration-700 group-hover:opacity-100 md:group-hover:opacity-[1] group-hover:stroke-white" opacity="0.2 md:opacity-[1]">
+                                            <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                        </g>
+                                        </svg>
+                                    </div>
+                                    </div>
+                                </NuxtLink>
+                            </div>
+                        
+                            <!-- Card 4 -->
+                            <div class="team-card lg:h-auto h-[320px] sm:h-[290px] bg-white rounded-3xl border-[3px] border-darkGray/15 overflow-hidden group hover:border-darkGreen transition-all duration-700 flex flex-col">
+                            <NuxtLink :to="`/about/${teamData[0].slug.current}`" class="flex flex-col h-full">
+                                <!-- Image Section -->
+                                <div class="flex-grow overflow-hidden">
+                                <img class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-125" :src="$urlFor(teamData[0].image).width(1920).url()"  :alt="teamData[0].name">
+                                </div>
+                                <!-- Text Section -->
+                                <div class="bg-darkGreen py-1.5 sm:py-1 md:py-2">
+                                <h3 class="text-center text-white font-bold text-base md:text-lg pb-1 sm:pb-1.5">{{teamData[0].name}}</h3>
+                                <div class="flex items-center justify-center space-x-4 pb-1">
+                                    <p class="text-white font-semibold text-xs sm:text-sm lg:text-base">{{teamData[0].position}}</p>
+                                    <svg class="ml-2 w-5 h-5" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g class="transition-all duration-700 group-hover:opacity-100 md:group-hover:opacity-[1] group-hover:stroke-white" opacity="0.2 md:opacity-[1]">
+                                        <path d="M15 16.5L18.2929 13.2071C18.6834 12.8166 18.6834 12.1834 18.2929 11.7929L15 8.5M18 12.5L4 12.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                    </svg>
+                                </div>
+                                </div>
+                            </NuxtLink>
+                            </div>
                         </div>
                     </section>
                 </section>
