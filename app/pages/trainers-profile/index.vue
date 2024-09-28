@@ -63,17 +63,17 @@
                     </NuxtLink>
 
                     <!-- Card 5 -->
-                    <NuxtLink :to="`/trainers-profile/${trainersData[3].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
+                    <!-- <NuxtLink :to="`/trainers-profile/${trainersData[3].slug.current}`" class="px-8 py-12 mb-[14px] shadow-lg rounded-3xl border hover:cursor-pointer border-mainGreen bg-white">
                         <h3 class="text-semiDarkGreen font-bold text-lg md:text-xl pb-4">{{ trainersData[3].name }}</h3>
                         <div class="pt-4">
                             <p class="font-bold text-base text-black">Profile Summary:</p>
                             <p class="font-medium text-[17px] text-darkGray leading-8">
-                                <!-- <PortableText :value="trainersData[3].profileSummary" /> -->
+                             
                                 {{ trainersData[1].profileSummary[0].children[0].text }}...
                                 <span class=" text-linkBlue underline font-medium hover:text-linkBlue/45">See More</span>
                             </p>
                         </div>
-                    </NuxtLink>
+                    </NuxtLink> -->
 
                 </div>
             </div>
